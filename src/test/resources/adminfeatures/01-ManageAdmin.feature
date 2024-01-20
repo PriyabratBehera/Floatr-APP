@@ -3,9 +3,9 @@
 Feature: Manage Admin Scenario
 
   Scenario: Create a new user
-    Given page load successfully
-#    When user click on link "Manage Admins"
-    Given Admin Clicks on User Kyc Module
+#    Given page load successfully
+##    When user click on link "Manage Admins"
+#    Given Admin Clicks on User Kyc Module
 
 
 
