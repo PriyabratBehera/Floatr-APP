@@ -398,7 +398,6 @@ Feature: Digital Gold Scenarios
   Scenario: Verify functionality of Order Physical Gold
     Given application launched successfully
     And user change the interval for "8412398012 | 8412398012"
-#    And user scroll to view Gold
     When user clicks on Digital Gold
     And user wait for "2000" milli second
     And user click by text contains "Locker"
@@ -485,7 +484,6 @@ Feature: Digital Gold Scenarios
   Scenario: Edit Shipping Address for Gold Order
     Given application launched successfully
     And user change the interval for "8412398012 | 8412398012"
-#    And user scroll to view Gold
     When user clicks on Digital Gold
     And user wait for "2000" milli second
     And user click by text contains "Order"
@@ -535,7 +533,6 @@ Feature: Digital Gold Scenarios
 
   Scenario: Verify detailed transaction for Sell
     Given application launched successfully
-#    And user scroll to view Gold
     When user clicks on Digital Gold
     And user click by text contains "Locker"
     And user click by text contains "Liquid FundsGoal 123"
@@ -591,7 +588,6 @@ Feature: Digital Gold Scenarios
 
   Scenario: Verify detailed transaction for Delivery
     Given application launched successfully
-#    And user scroll to view Gold
     When user clicks on Digital Gold
     And user click by text contains "Locker"
     And user click by text contains "Liquid FundsGoal 123"
@@ -736,7 +732,6 @@ Feature: Digital Gold Scenarios
   @Validation @DigitalGoldValidation
   Scenario: Verify validation error  while invest via SIP for monthly/weekly
     Given application launched successfully
-#    And user scroll to view Gold
     When user clicks on Digital Gold
     And user click by text "Start SIP"
     And user select SIP start date as "1"

@@ -80,7 +80,6 @@ public class TrackExpensesStepDef {
     public void userSelectsFrequencyAs(String frequency) throws Exception {
         new TrackExpensesPage().clickFrequency();
         new BasePage().clickByText(frequency);
-
     }
 
     @And("user selects date from date picker")

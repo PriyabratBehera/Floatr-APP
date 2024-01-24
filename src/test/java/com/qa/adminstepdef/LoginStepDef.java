@@ -11,7 +11,6 @@ import java.util.Objects;
 public class LoginStepDef {
     HomePage homePage = new HomePage();
     GlobalParams globalParams = new GlobalParams();
-
     @Given("page load successfully")
     public void pageLoadSuccessfully() throws InterruptedException {
         if (Objects.equals(globalParams.getBrowserType(), "Edge")) {

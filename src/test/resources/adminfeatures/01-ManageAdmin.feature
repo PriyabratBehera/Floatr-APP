@@ -6,20 +6,6 @@ Feature: Manage Admin Scenario
     Given page load successfully
 #    When user click on link "Manage Admins"
     Given Admin Clicks on User Kyc Module
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 #    And user click on link "Admin List"
 #    Then user is in "Admins" page
 #    And user wait for "2000" milli second

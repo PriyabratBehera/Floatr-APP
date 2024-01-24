@@ -12,79 +12,55 @@ import java.util.Objects;
 public class TrackExpensesPage extends ProfilePage {
     TestUtils utils = new TestUtils();
     GlobalParams globalParams = new GlobalParams();
-
     @AndroidFindBy(xpath = "//*[@text='Transaction']")
     @iOSXCUITFindBy(iOSNsPredicate = "label BEGINSWITH 'Transaction'")
     private MobileElement addTransaction;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Category')]/following-sibling::android.view.ViewGroup[1]")
     @iOSXCUITFindBy(iOSNsPredicate = "label ENDSWITH 'category'")
     private MobileElement chooseCategory;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'How much')]/following-sibling::android.widget.EditText[1]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"₹0\"]/XCUIElementTypeTextField")
     private MobileElement howMuch;
-
     @AndroidFindBy(xpath = "//*[@text='Spending']")
-//    @iOSXCUITFindBy(iOSNsPredicate = "label == 'Spending'")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Spending\"]")
     private MobileElement spending;
-
     @AndroidFindBy(xpath = "(//*[@text='Income'])[2]")
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'Income'")
     private MobileElement income;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Transaction Date')]/following-sibling::android.view.ViewGroup[1]")
     private MobileElement transactionDate;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Received Date')]/following-sibling::android.view.ViewGroup[1]")
     private MobileElement receivedDate;
-
     @AndroidFindBy(xpath = "//*[@text='1']")
     private MobileElement date;
-
     @AndroidFindBy(xpath = "//*[@text='2']")
     private MobileElement dateReceived;
-
     @AndroidFindBy(xpath = "//*[@text='Save Transaction']")
     private MobileElement saveTransaction;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Paid From')]/following-sibling::android.view.ViewGroup[1]//android.widget.ImageView")
     private MobileElement paidFrom;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Received From')]/following-sibling::android.view.ViewGroup[1]//android.widget.ImageView")
     private MobileElement receivedFrom;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Paid To')]/following-sibling::android.view.ViewGroup[1]//android.widget.EditText[1]")
     private MobileElement paidTo;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Received In')]/following-sibling::android.view.ViewGroup[1]//android.widget.EditText[1]")
     private MobileElement receivedIn;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Is this monthly recurring')]/following-sibling::android.view.ViewGroup[1]")
     private MobileElement monthlyRecurring;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Frequency')]/following-sibling::android.view.ViewGroup[1]//android.widget.ImageView")
     private MobileElement frequency;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Date')]/following-sibling::android.view.ViewGroup[1]")
     private MobileElement datePick;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'End After')]/following-sibling::android.view.ViewGroup[1]//android.widget.EditText")
     private MobileElement endAfter;
-
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.ImageView")
     private MobileElement deleteTransaction;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'My Transactions')]/following-sibling::android.view.ViewGroup[1]")
     private MobileElement duration;
-
     @AndroidFindBy(xpath = "//android.widget.EditText")
     private MobileElement search;
-
     @AndroidFindBy(xpath = "//*[@text='Received From']")
     private MobileElement receivedFromScroll;
-
     @AndroidFindBy(xpath = "//*[@text='Paid From']")
     private MobileElement paidFromScroll;
 
@@ -128,7 +104,6 @@ public class TrackExpensesPage extends ProfilePage {
     }
 
     public void scrollToSaveTransaction() throws Exception {
-//        scrollToElement(saveTransaction, "up", receivedFromScroll);
         andScrollToElementUsingUiScrollable("text", "Save Transaction");
     }
 
@@ -144,9 +119,7 @@ public class TrackExpensesPage extends ProfilePage {
         String toElementXPATh = "//*[@text='" + toElement + "']";
         String fromElementXPATh = "//*[@text='" + fromElement + "']";
         scrollToElement(getElement(toElementXPATh), "up", getElement(fromElementXPATh));
-
     }
-
 
     public void clickPaidFrom() {
         click(paidFrom);
@@ -191,13 +164,11 @@ public class TrackExpensesPage extends ProfilePage {
     }
 
     public String getPaidFrom(String category) throws Exception {
-//        String xpath = "//*[contains(@text,'" + category + "')]/parent::android.view.ViewGroup/following-sibling::android.view.ViewGroup//android.widget.TextView[3]";
         String xpath = "//*[contains(@text,'" + category + "')]/following-sibling::android.widget.TextView[6]";
         return getText((getElement(xpath)), "Get Paid From: ");
     }
 
     public String getPaidTo(String category) throws Exception {
-//        String xpath = "//*[contains(@text,'" + category + "')]/parent::android.view.ViewGroup/following-sibling::android.view.ViewGroup//android.widget.TextView[4]";
         String xpath = "//*[contains(@text,'" + category + "')]/following-sibling::android.widget.TextView[7]";
         return getText((getElement(xpath)), "Get Paid To: ");
     }

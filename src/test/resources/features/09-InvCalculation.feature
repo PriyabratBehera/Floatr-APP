@@ -1,6 +1,6 @@
 
 Feature: Calculation Scenario
-  @Calculator
+
   Scenario: Verify validation in income screen
 #    Given user login with user "9123123123 | 9123123123"
     And application launched successfully

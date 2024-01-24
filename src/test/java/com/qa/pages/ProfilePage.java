@@ -7,46 +7,30 @@ import org.testng.Assert;
 
 public class ProfilePage extends BasePage {
     TestUtils utils = new TestUtils();
-
     @AndroidFindBy(xpath = "(//*[@class='android.widget.ImageView'])[1]")
     private MobileElement hamburgerIcon;
-
     @AndroidFindBy(xpath = "//android.widget.ScrollView[@content-desc=\"IPDRAWERCONTENT\"]/android.view.ViewGroup/android.widget.TextView")
     private MobileElement profileName;
-
     @AndroidFindBy(accessibility = "Aboutme")
     private MobileElement profile;
-
     @AndroidFindBy(accessibility = "MutualFundKYC")
     private MobileElement kyc;
-
     @AndroidFindBy(accessibility = "Share App")
     private MobileElement shareApp;
-
     @AndroidFindBy(accessibility = "Rewards")
     private MobileElement rewards;
-
     @AndroidFindBy(accessibility = "Notification")
     private MobileElement notification;
-
     @AndroidFindBy(accessibility = "Feedback")
     private MobileElement feedback;
-
     @AndroidFindBy(accessibility = "FAQ")
     private MobileElement faq;
-
     @AndroidFindBy(accessibility = "Support")
     private MobileElement support;
-
     @AndroidFindBy(accessibility = "Terms")
     private MobileElement termsOfUse;
-
     @AndroidFindBy(accessibility = "Logout")
     private MobileElement logout;
-
-
-//    public ProfilePage() {
-//    }
 
     public void clickHamburgerIconInHomePage() {
         click(hamburgerIcon);
@@ -65,7 +49,6 @@ public class ProfilePage extends BasePage {
         Assert.assertTrue(support.isDisplayed());
         Assert.assertTrue(termsOfUse.isDisplayed());
         Assert.assertTrue(logout.isDisplayed());
-
     }
 
     public String getUserName() {

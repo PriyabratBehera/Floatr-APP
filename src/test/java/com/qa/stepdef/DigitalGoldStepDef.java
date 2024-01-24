@@ -83,7 +83,6 @@ public class DigitalGoldStepDef {
     @And("user move to goal {string}")
     public void userMoveToGoal(String goalName) throws Exception {
         new DigitalGoldPage().clickMoveTo();
-//        new DigitalGoldPage().scrollToUnplannedInFinancialGoalToDebitBox();
         new BasePage().clickByTextContains(goalName);
     }
 
@@ -251,14 +250,13 @@ public class DigitalGoldStepDef {
     }
 
     @And("user verify Buyer name")
-    public void userVerifyBuyerName(){
+    public void userVerifyBuyerName() {
         String xpath;
         if (Objects.equals(params.getPlatformName(), "Android")) {
             xpath = "//*[@text='Puneet Naik']";
         } else {
             xpath = "//XCUIElementTypeStaticText[@name='Puneet Naik']";
         }
-//        Assert.assertTrue(new BasePage().isElementExist(xpath));
         Assert.assertTrue(new DigitalGoldPage().verifyBuyerName());
 
     }
@@ -307,10 +305,12 @@ public class DigitalGoldStepDef {
     public void verifyBelowGoldDeliveryHistory(DataTable dataTable) throws Exception {
         new DigitalGoldPage().verifyGoldOrderHis(dataTable);
     }
+
     @Then("verify below transaction History")
     public void verifyBelowTransactionHistory(DataTable dataTable) throws Exception {
         new DigitalGoldPage().verifyGoldBuyHis(dataTable);
     }
+
     @When("user scroll to faq section")
     public void userScrollToFaqSection() throws Exception {
         new DigitalGoldPage().scrollFaqSec();
@@ -320,6 +320,7 @@ public class DigitalGoldStepDef {
     public void userScrollToViewTwentyFourPercentExtra() throws Exception {
         new DigitalGoldPage().scrollTwentyFourExtra();
     }
+
     @And("user scroll to view when is extra")
     public void userScrollToViewWhenIsExtra() throws Exception {
         new DigitalGoldPage().scrollWhenIsExtra();
@@ -338,7 +339,7 @@ public class DigitalGoldStepDef {
 
     @Then("user edit shipping address")
     public void userEditShippingAddress() throws Exception {
-        new  DigitalGoldPage().editShippingAdd();
+        new DigitalGoldPage().editShippingAdd();
     }
 
     @And("user reedit shipping address")

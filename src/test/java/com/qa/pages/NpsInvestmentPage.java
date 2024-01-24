@@ -38,13 +38,11 @@ import static org.testng.Assert.assertTrue;
 
 
 public class NpsInvestmentPage extends ProfilePage {
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"NPS\n" +
             "Investment\"])[2]")
     @AndroidFindBy(xpath = "//*[@text='NPS\n" +
             "Investment']")
     private MobileElement npsInvestment;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name='Register\n" +
             "for NPS']/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther/descendant::XCUIElementTypeImage")
     @AndroidFindBy(xpath = "//*[@text='Register\n" +
@@ -68,11 +66,9 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Tax Benefits on NPS']")
     @AndroidFindBy(xpath = "//*[@text='Tax Benefits on NPS']")
     private MobileElement taxBenefitsNPS;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name='More About NPS']")
     @AndroidFindBy(xpath = "//*[@text='More About NPS']")
     private MobileElement moreAboutNps;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Auto Choice of Investment\"]")
     @AndroidFindBy(xpath = "//*[@text='Auto Choice of Investment']")
     private MobileElement autoChoiceInvest;
@@ -88,7 +84,6 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"NPS Advantage\"]")
     @AndroidFindBy(xpath = "//*[@text='NPS Advantage']")
     private MobileElement npsAdvantages;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"NPS FAQ’s\"]")
     @AndroidFindBy(xpath = "//*[@text='NPS FAQ’s']")
     private MobileElement npsFaq;
@@ -98,11 +93,9 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Set Financial Goals\"]")
     @AndroidFindBy(xpath = "//*[@text='Set Financial Goals']")
     private MobileElement setFinancialGoal;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Invest For Your Goals & Buy Insurance\"]")
     @AndroidFindBy(xpath = "//*[@text='Invest For Your Goals & Buy Insurance']")
     private MobileElement buyInsurance;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\" My Retirement Savings Plan\"]")
     @AndroidFindBy(xpath = "//*[@text=' My Retirement Savings Plan']")
     private MobileElement retirementSavingPlan;
@@ -120,21 +113,18 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text='At today’s value, I need a \n" +
             "monthly retirement income of']/following-sibling::android.widget.SeekBar[1]")
     private MobileElement monthlyRetirementIncomeTxtBar;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"My current age is\"]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='My current age is']/following-sibling::android.widget.EditText[1]")
     private MobileElement currentAgeTxtBx;
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"My current age is\"]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='My current age is']/following-sibling::android.widget.SeekBar[1]")
     private MobileElement currentAgeTxtBar;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"I will retire at the age of\"]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='I will retire at the age of']/following-sibling::android.widget.EditText[1]")
     private MobileElement retirementAgeTxtBx;
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"I will retire at the age of\"]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='I will retire at the age of']/following-sibling::android.widget.SeekBar[1]")
     private MobileElement retirementAgeTxtBar;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"After retirement, I need\n" +
             "income till the age of\"]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='After retirement, I need\n" +
@@ -145,7 +135,6 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text='After retirement, I need\n" +
             "income till the age of']/following-sibling::android.widget.SeekBar[1]")
     private MobileElement incomeAfterRetirementBar;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Till I retire, I will invest at\n" +
             "an annual interest rate of\"]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='Till I retire, I will invest at\n" +
@@ -156,7 +145,6 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text='Till I retire, I will invest at\n" +
             "an annual interest rate of']/following-sibling::android.widget.SeekBar[1]")
     private MobileElement investTillRetireBar;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Post-Retirement, I will invest\n" +
             "at an annual interest rate of\"]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='Post-Retirement, I will invest\n" +
@@ -170,40 +158,31 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Corpus\"]")
     @AndroidFindBy(xpath = "//*[@text='Corpus']")
     private MobileElement corpus;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"✓ Corp\n" +
             "Detail\"])[3]")
     @AndroidFindBy(xpath = "//*[@text='Corp\n" +
             "Detail']")
     private MobileElement corpDetailThick;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"1 Corp\n" +
             "Detail\"])[3]")
     @AndroidFindBy(xpath = "//*[@text='Corp\n" +
             "Detail']")
     private MobileElement corpDetail;
-
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Company Name\"]/following-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text='Company Name']/following-sibling::android.view.ViewGroup[1]")
     private MobileElement compSearchBx;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Search Company & Select\"])[4]/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text=\"Search Company & Select\"]")
     private MobileElement compSearchSelect;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Employee Number\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='Employee Number']/following-sibling::android.widget.EditText")
     private MobileElement empNumber;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Date of Joining the Company\"]/following-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text='Date of Joining the Company']/following-sibling::android.view.ViewGroup")
     private MobileElement compJoinDt;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"5 Invest\"])[3]")
     @AndroidFindBy(xpath = "//*[@text='Invest']")
     private MobileElement investTab;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Register as Corporate Subscriber\"]")
     @AndroidFindBy(xpath = "//*[@text='Register as Corporate Subscriber']")
     private MobileElement corporateSub;
@@ -213,11 +192,9 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "\uE836 Corporate Subscriber")
     @AndroidFindBy(xpath = "//*[@text='Corporate Subscriber']")
     private MobileElement corpSubscriber;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Pension Fund Manager (PFM)\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text='Pension Fund Manager (PFM)']/following-sibling::android.view.ViewGroup/child::android.view.ViewGroup")
     private MobileElement pensionFundManager;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Alternative Fund (A) - Upto 5%\"])[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='Alternative Fund (A) - Upto 5%']/following-sibling::android.widget.EditText[1]")
     private MobileElement alternativeFund;
@@ -227,7 +204,6 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Equity (E) - Upto 75%\"])[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='Equity (E) - Upto 75%']/following-sibling::android.widget.EditText[1]")
     private MobileElement equityFund;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Equity (E) - Upto 75%\"]/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther/descendant::XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='Equity (E) - Upto 75%']/following-sibling::android.widget.EditText[1]")
     private MobileElement equityFundAftClear;
@@ -249,49 +225,36 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text=\"Guardian is nominee’s\"]/following-sibling::android.view.ViewGroup[1]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Guardian is nominee’s\"]/following-sibling::XCUIElementTypeOther")
     private MobileElement guardianIsMyTxtBox;
-
-
     @AndroidFindBy(xpath = "//*[@text=\"NPS E-E-E Benefits\"]/preceding-sibling::android.view.ViewGroup")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"NPS E-E-E Benefits\"]/ancestor::XCUIElementTypeOther[2]/XCUIElementTypeOther[1]")
     private MobileElement youtubeVideo;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'NPS FAQ')]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,\"NPS FAQ\")]")
     private MobileElement existAndWithdraw;
-
     @AndroidFindBy(xpath = "//*[@text='Life Cycle Fund Type']/following-sibling::android.view.ViewGroup[1]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Life Cycle Fund Type\"]/following-sibling::XCUIElementTypeOther/descendant::XCUIElementTypeImage")
     private MobileElement lifeCycleFundType;
-
     @AndroidFindBy(xpath = "//*[@text='Auto Investment Choice']/following-sibling::android.view.ViewGroup[1]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Auto Investment Choice\"]/following-sibling::XCUIElementTypeOther")
     private MobileElement closeBtnAutoInvest;
-
     @AndroidFindBy(xpath = "//*[@text=\"Can I change my scheme preference?\"]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Can I change my scheme preference?\"])[2]\n")
     private MobileElement canIChange;
-
     @AndroidFindBy(xpath = "//*[@text=\"What are the tax benefits in NPS account\"]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"What are the tax benefits in NPS account\"])[1]")
     private MobileElement whatAreTax;
-
     @AndroidFindBy(xpath = "//*[@text=\"Pension Fund Manager (PFM)\"]/following-sibling::android.view.ViewGroup")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Pension Fund Manager (PFM)\"]/following-sibling::XCUIElementTypeOther/descendant::XCUIElementTypeOther")
     private MobileElement pfmDropDwn;
-
     @AndroidFindBy(xpath = "//*[@text=\"SBI PENSION FUNDS PRIVATE LIMITED\"]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"SBI PENSION FUNDS PRIVATE LIMITED\"])[2]")
     private MobileElement sbiPFM;
-
     @AndroidFindBy(xpath = "//*[@text=\"Choose Asset Allocation (Total should be 100%)\"]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Choose Asset Allocation (Total should be 100%)\"]")
     private MobileElement choiceAssertAlo;
-
-
     @AndroidFindBy(xpath = "//*[@text=\"Portfolio Option\"]/following-sibling::android.view.ViewGroup")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Portfolio Option\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther")
     private MobileElement portFoOpt;
-
     @AndroidFindBy(xpath = "//*[@text=\"Investment\n" +
             "Choices\"]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"✓ Investment\n" +
@@ -300,15 +263,12 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text=\"Nominee\"]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"✓ Nominee\"])[3]")
     private MobileElement nominee;
-
     @AndroidFindBy(xpath = "//*[@text=\"Guardian’s Date of Birth (Must be adult)\"]/following-sibling::android.view.ViewGroup")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Guardian’s Date of Birth (Must be adult)\"]/following-sibling::XCUIElementTypeOther")
     private MobileElement guardianDOB;
-
     @AndroidFindBy(xpath = "//*[@text=\"scroll down\"]/preceding-sibling::android.widget.ScrollView/descendant::android.view.ViewGroup[4]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"scroll down\"]/preceding-sibling::XCUIElementTypeOther[2]/descendant::XCUIElementTypeOther[8]")
     private MobileElement dtPicker;
-
     @AndroidFindBy(xpath = "//*[@text=\"2002\"]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"2002\"])[1]")
     private MobileElement dt1995;
@@ -321,12 +281,9 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text=\"Father\"]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Father\"])[3]")
     private MobileElement father;
-
     @AndroidFindBy(xpath = "//*[@text=\"S\"]/preceding-sibling::android.view.ViewGroup/child::android.view.ViewGroup[2]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"S\"])[1]/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther")
     private MobileElement currentYear;
-
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Guardian’s Name\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text=\"Guardian’s Name\"]/following-sibling::android.widget.EditText")
     private MobileElement guardianName;
@@ -339,43 +296,33 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Hombale Films (KGF 3)\"])[3]")
     @AndroidFindBy(xpath = "(//*[contains(@text,'Hombale Films (KGF 3)')])[2]")
     private MobileElement hombalFilms;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name='Original Valuefloat Technologies Pvt Ltd (Floatr)']")
     @AndroidFindBy(xpath = "//*[@text='Original Valuefloat Technologies Pvt Ltd (Floatr)']")
     private MobileElement originalValueFloatr;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Set Financial Goals\"]/parent::XCUIElementTypeOther/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther[2]/descendant::XCUIElementTypeOther[3]")
     @AndroidFindBy(xpath = "//*[@text='Set Financial Goals']/preceding-sibling::android.widget.HorizontalScrollView/descendant::android.widget.ImageView[1]")
     private MobileElement investInNpsBan;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Life Cycle Fund Type\"]/following-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text=\"Life Cycle Fund Type\"]/following-sibling::android.view.ViewGroup[1]")
     private MobileElement lifCycleFundDropDw;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"IFSC Code\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text=\"IFSC Code\"]/following-sibling::android.widget.EditText")
     private MobileElement ifscCode;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Account Number (Must be Savings Account)\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text=\"Account Number (Must be Savings Account)\"]/following-sibling::android.widget.EditText[1]")
     private MobileElement accountNumber;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Bank Name\"]/following-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text=\"Bank Name\"]/following-sibling::android.view.ViewGroup[1]")
     private MobileElement bankNameDrpDwn;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Submit Application\"])[2]")
     @AndroidFindBy(xpath = "//*[@text='Submit Application']")
     private MobileElement submitApplication;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Contribution Amount\"]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther[1]/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text=\"Contribution Amount\"]/following-sibling::android.widget.EditText")
     private MobileElement contributionAmt;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"\uE836 Tier 2\"]")
     @AndroidFindBy(xpath = "//*[@text='Tier 2']")
     private MobileElement tire2Acc;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"\uE836 Tier 1\"]")
     @AndroidFindBy(xpath = "//*[@text='Tier 1']")
     private MobileElement tire1Acc;
@@ -388,7 +335,6 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[contains(@name,\"Make Payment for ₹\")]")
     @AndroidFindBy(xpath = "//*[contains(@text,'Make Payment for ₹')]")
     private MobileElement makeAPayment;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"BillDesk\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]")
     @AndroidFindBy(xpath = "(//*[@text='Select'])[2]")
     private MobileElement selectTrType;
@@ -401,18 +347,15 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Submit\"]")
     @AndroidFindBy(xpath = "//*[@text='Submit']")
     private MobileElement submitBtn;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Home\"])[2]")
     @AndroidFindBy(xpath = "//*[@text='Home']")
     private MobileElement homeBtn;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"NPS\"])[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]")
     @AndroidFindBy(xpath = "//*[@text='NPS']/following-sibling::android.view.ViewGroup")
     private MobileElement historyIcon;
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"NPS\"])[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]")
     @AndroidFindBy(xpath = "//*[@text='NPS']/following-sibling::android.view.ViewGroup")
     private MobileElement homeHistoryIcon;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Reasons of Failure\"]/following-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text='Reasons of Failure']/following-sibling::android.view.ViewGroup[1]")
     private MobileElement closeIconFailureScreen;
@@ -422,11 +365,9 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"\uE836 Individual Subscriber\"]")
     @AndroidFindBy(xpath = "//*[@text='Individual Subscriber']")
     private MobileElement individualSubRadioBtn;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Portfolio Option\"]/following-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text=\"Portfolio Option\"]/following-sibling::android.view.ViewGroup")
     private MobileElement portfolioOpt;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Re-start NPS Application\"]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther[1]")
     @AndroidFindBy(xpath = "//*[@text=\"Re-start NPS Application\"]/following-sibling::android.view.ViewGroup[1]")
     private MobileElement closeIconRestartPopup;
@@ -436,14 +377,12 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,\"Select Nominee\")]/following-sibling::XCUIElementTypeOther[2]/descendant::XCUIElementTypeOther[3]")
     @AndroidFindBy(xpath = "//*[contains(@text,\"Select Nominee\")]/following-sibling::android.view.ViewGroup[2]")
     private MobileElement twoNominee;
-
     @iOSXCUITFindBy(iOSNsPredicate = "value == \"100 %\"")
     @AndroidFindBy(xpath = "//*[@text='100 %']")
     private MobileElement hundredPer;
     @iOSXCUITFindBy(iOSNsPredicate = "value == '50 %'")
     @AndroidFindBy(xpath = "//*[@text='50 %']")
     private MobileElement fiftyPer;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Maximum 3 banks\n" +
             "are allowed']")
     @AndroidFindBy(xpath = "//*[@text='Maximum 3 banks\n" +
@@ -468,18 +407,15 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Open NPS Account\"])[3]")
     @AndroidFindBy(xpath = "//*[@text='Open NPS Account']")
     private MobileElement openNpsAcc;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Subscriber Name\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText")
     @AndroidFindBy(xpath = "//*[@text='Subscriber Name']/parent::android.view.ViewGroup/following-sibling::android.view.ViewGroup[1]/android.widget.TextView")
     private MobileElement subscriberName;
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Name\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText")
     @AndroidFindBy(xpath = "//*[@text='Subscriber Name']/parent::android.view.ViewGroup/following-sibling::android.view.ViewGroup[1]/android.widget.TextView")
     private MobileElement Name;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"PRAN Number\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText")
     @AndroidFindBy(xpath = "//*[@text='PRAN Number']/parent::android.view.ViewGroup/following-sibling::android.view.ViewGroup[1]/android.widget.TextView")
     private MobileElement pranNumber;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"PRAN Status\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText")
     @AndroidFindBy(xpath = "//*[@text='PRAN Status']/parent::android.view.ViewGroup/following-sibling::android.widget.TextView")
     private MobileElement pranStatus;
@@ -492,7 +428,6 @@ public class NpsInvestmentPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"PRAN Status\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText")
     @AndroidFindBy(xpath = "//*[@text='PRAN Status']/parent::android.view.ViewGroup/following-sibling::android.view.ViewGroup[1]/android.widget.TextView")
     private MobileElement pranStatus1;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Corporate Name\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText")
     @AndroidFindBy(xpath = "//*[@text='Corporate Name']/parent::android.view.ViewGroup/following-sibling::android.widget.TextView")
     private MobileElement corporateName;
@@ -501,7 +436,6 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text='Acknowledgement\n" +
             "Number']/parent::android.view.ViewGroup/following-sibling::android.view.ViewGroup[1]/android.widget.TextView")
     private MobileElement acknowledgeNo;
-
     @AndroidFindBy(xpath = "//*[@text=\"Nominee's Date of Birth\"]/following-sibling::android.view.ViewGroup")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Nominee's Date of Birth\"]/following-sibling::XCUIElementTypeOther")
     private MobileElement nomineeDob;
@@ -511,11 +445,9 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text=\"S\"]/preceding-sibling::android.view.ViewGroup/child::android.view.ViewGroup[1]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"S\"])[1]/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther/XCUIElementTypeOther[1]")
     private MobileElement calBackwardBtn;
-
     @AndroidFindBy(xpath = "//*[@text=\"S\"]/preceding-sibling::android.view.ViewGroup/child::android.view.ViewGroup[3]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"S\"])[1]/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther/XCUIElementTypeOther[2]")
     private MobileElement calForwardBtn;
-
     @AndroidFindBy(xpath = "//*[@text=\"Moderate (LC-50)\"]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"S\"])[1]/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther/XCUIElementTypeOther[2]")
     private MobileElement moderateLC50;
@@ -525,15 +457,12 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text=\"Conservative (LC-25)\"]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"S\"])[1]/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther/XCUIElementTypeOther[2]")
     private MobileElement conservativeLC25;
-
     @AndroidFindBy(xpath = "//*[@text='Enter value upto 5 %']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Enter value upto 5 %\"]")
     private MobileElement enterValue5per;
-
     @AndroidFindBy(xpath = "//*[@text=\"NPS E-E-E Benefits\"]/preceding-sibling::android.view.ViewGroup")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"S\"])[1]/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther/XCUIElementTypeOther[2]")
     private MobileElement npsEeeVideo;
-
     @AndroidFindBy(xpath = "//*[@text='Exit at Maturity (60 years)']")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"S\"])[1]/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther/XCUIElementTypeOther[2]")
     private MobileElement exitMaturity;
@@ -543,13 +472,9 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text='Partial Withdrawal']")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"S\"])[1]/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther/XCUIElementTypeOther[2]")
     private MobileElement partialWithdral;
-
-
     @AndroidFindBy(xpath = "//*[@text='Check PRAN Status']/following-sibling::android.widget.EditText")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Check PRAN Status\"]/following-sibling::XCUIElementTypeOther[1]/descendant::XCUIElementTypeTextField")
     private MobileElement pranInputBx;
-
-
     @AndroidFindBy(xpath = "//*[@text='PRAN Check Successful']/preceding-sibling::android.view.ViewGroup[1]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"PRAN Check Successful\"]/preceding-sibling::XCUIElementTypeOther[2]")
     private MobileElement closePranStaPopup;
@@ -559,17 +484,14 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text='Internet Banking']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Internet Banking\"]")
     private MobileElement internetBanking;
-
     @AndroidFindBy(xpath = "//*[@text='Registration Failed']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Registration Failed\"]")
     private MobileElement registrationFailed;
-
     @AndroidFindBy(xpath = "//*[@text='Shift\n" +
             "My PRAN']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Shift\n" +
             "My PRAN\"]")
     private MobileElement shiftMyPran;
-
     @AndroidFindBy(xpath = "//*[@text='Individual']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"\uE836 Individual\"]")
     private MobileElement indRadioBtn;
@@ -591,7 +513,6 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[contains(@text,'Enter OTP to Confirm')]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'Enter OTP to Confirm')]")
     private MobileElement pranShiftOtp;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Enter OTP received on')]/following-sibling::android.widget.EditText[1]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[contains(@name,\"Enter OTP received \")]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTextField")
     private MobileElement pranShiftOtp1;
@@ -607,23 +528,17 @@ public class NpsInvestmentPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[contains(@text,'Enter OTP received on')]/following-sibling::android.widget.EditText[4]")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"NPS\"])[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]")
     private MobileElement informationIcon;
-
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeKey[@name='Delete']")
     private MobileElement iOsDeleteButton;
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='HDFC Pension Management Company Limited Scheme G - Tier I']")
     private MobileElement scemeGTire;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Enter OTP received on')]/following-sibling::android.widget.EditText[4]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Contribution Amount\"]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther[1]/XCUIElementTypeTextField")
     private MobileElement increaseRegiAmt;
+
     public void scrollToNpsInvestment() throws Exception {
-//        if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(buyInsurance, 202, 796, 194, 461);
-//        }
         if (!isVisible(npsInvestment)) {
             if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//                scrollInAndroid(buyInsurance, 202, 796, 194, 461);
                 andIosScroll(buyInsurance, "up", setFinancialGoal);
             } else {
                 scrollElement(buyInsurance, "up", setFinancialGoal);
@@ -650,7 +565,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void scrollToActiveChoice() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            andScrollToElementUsingUiScrollable("text","Active Choice of Investment");
             andIosScroll(activeChoiceInvest, "up", npsAdvantages, 5000);
         } else {
             scrollElement(activeChoiceInvest, "up", npsAdvantages);
@@ -659,7 +573,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void scrollToTaxSavingAccount() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(taxSavingAccount, 204, 793, 201, 252);
             andScrollToElementUsingUiScrollable("text", "Tax Saving Account");
         } else {
             scrollElement(taxSavingAccount, "up", npsAdvantages);
@@ -672,7 +585,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void scrollToFaq() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(corpus, 204, 793, 201, 252);
             andScrollToElementUsingUiScrollable("text", "What are the investment choices available in NPS?");
         } else {
             scrollElement(whenIStartGetPension, "up", existAndWithdraw);
@@ -685,7 +597,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void scrollToWhatAreTax() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(autoChoiceInvest, 204, 793, 201, 252);
             andScrollToElementUsingUiScrollable("text", "What are the tax benefits in NPS account");
         } else {
             scrollElement(whatAreTax, "up", canIChange);
@@ -711,7 +622,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void scrollToCurrentAge() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(currentAge,  201, 252,204, 793);
             andIosScroll(currentAge, "down", retirementSavingPlan);
 
         } else {
@@ -722,7 +632,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void scrollToCorpus() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(corpus, 204, 793, 201, 252);
             andScrollToElementUsingUiScrollable("text", "Corpus");
         } else {
             scrollElement(corpus, "up", retirementSavingPlan);
@@ -737,13 +646,7 @@ public class NpsInvestmentPage extends ProfilePage {
         } else {
             click(monthlyRetirementIncomeTxtBx);
             clear(monthlyRetirementIncomeTxtBx);
-//            for(int i=0;i<3;i++){
-//                clickTypeKeyDelete();
-//            }
-//            Thread.sleep(5000);
             sendKeys(monthlyRetirementIncomeTxtBx, valueOf(incomeAmt.charAt(0)));
-//            Thread.sleep(5000);
-//            clickTypeKeyDelete();
             sendKeys(monthlyRetirementIncomeTxtBx, valueOf(incomeAmt.charAt(1)));
         }
     }
@@ -758,13 +661,7 @@ public class NpsInvestmentPage extends ProfilePage {
         } else {
             click(currentAgeTxtBx);
             clear(currentAgeTxtBx);
-//            for(int i=0;i<3;i++){
-//                clickTypeKeyDelete();
-//            }
-//            Thread.sleep(5000);
             sendKeys(currentAgeTxtBx, valueOf(incomeAmt.charAt(0)));
-//            Thread.sleep(5000);
-//            clickTypeKeyDelete();
             sendKeys(currentAgeTxtBx, valueOf(incomeAmt.charAt(1)));
             clickStaticText("My current age is");
         }
@@ -780,13 +677,7 @@ public class NpsInvestmentPage extends ProfilePage {
         } else {
             click(retirementAgeTxtBx);
             clear(retirementAgeTxtBx);
-//            for(int i=0;i<3;i++){
-//                clickTypeKeyDelete();
-//            }
-//            Thread.sleep(5000);
             sendKeys(retirementAgeTxtBx, valueOf(incomeAmt.charAt(0)));
-//            Thread.sleep(5000);
-//            clickTypeKeyDelete();
             sendKeys(retirementAgeTxtBx, valueOf(incomeAmt.charAt(1)));
             clickStaticText("My current age is");
         }
@@ -802,13 +693,7 @@ public class NpsInvestmentPage extends ProfilePage {
         } else {
             click(incomeAfterRetirement);
             clear(incomeAfterRetirement);
-//            for(int i=0;i<3;i++){
-//                clickTypeKeyDelete();
-//            }
-//            Thread.sleep(5000);
             sendKeys(incomeAfterRetirement, valueOf(incomeAmt.charAt(0)));
-//            Thread.sleep(5000);
-//            clickTypeKeyDelete();
             sendKeys(incomeAfterRetirement, valueOf(incomeAmt.charAt(1)));
             clickStaticText("My current age is");
         }
@@ -822,20 +707,14 @@ public class NpsInvestmentPage extends ProfilePage {
             String str = Integer.toString(twice);
             click(investTillRetire);
             clear(investTillRetire);
-//            for(int i=0;i<3;i++){
-//                clickTypeKeyDelete();
-//            }
             sendKeys(investTillRetireBar, str);
             clickStaticText("My current age is");
         } else {
             click(investTillRetire);
-//            clear(investTillRetire);
-            for(int i=0;i<3;i++){
+            for (int i = 0; i < 3; i++) {
                 clickTypeKeyDelete();
             }
-//            Thread.sleep(5000);
             sendKeys(investTillRetire, valueOf(incomeAmt.charAt(0)));
-//            Thread.sleep(5000);
             click(investTillRetire);
             sendKeys(investTillRetire, valueOf(incomeAmt.charAt(1)));
             clickStaticText("My current age is");
@@ -850,20 +729,14 @@ public class NpsInvestmentPage extends ProfilePage {
             String str = Integer.toString(twice);
             click(investPostRetire);
             clear(investPostRetire);
-//            for(int i=0;i<3;i++){
-//                clickTypeKeyDelete();
-//            }
             sendKeys(investPostRetireBar, str);
             clickStaticText("My current age is");
         } else {
             click(investPostRetire);
-//            clear(investPostRetire);
-            for(int i=0;i<2;i++){
+            for (int i = 0; i < 2; i++) {
                 clickTypeKeyDelete();
             }
-//            Thread.sleep(7000);
             sendKeys(investPostRetire, valueOf(incomeAmt.charAt(0)));
-//            Thread.sleep(7000);
             click(investTillRetire);
             sendKeys(investPostRetire, valueOf(incomeAmt.charAt(1)));
             clickStaticText("My current age is");
@@ -877,9 +750,6 @@ public class NpsInvestmentPage extends ProfilePage {
             String str = Integer.toString(twice);
             click(investPostRetire);
             clear(investPostRetire);
-//            for(int i=0;i<3;i++){
-//                clickTypeKeyDelete();
-//            }
             sendKeys(investPostRetireBar, "60");
             clickStaticText("My current age is");
         } else {
@@ -898,7 +768,6 @@ public class NpsInvestmentPage extends ProfilePage {
         if (Objects.equals(globalParams.getPlatformName(), "iOS")) {
             clickButtonTextDone();
         }
-
     }
 
     public void clickCorpDetail() {
@@ -960,36 +829,26 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void enterEquityFund(String fund) throws Exception {
         click(equityFund);
-//        clear(equityFund);
         if (Objects.equals(globalParams.getPlatformName(), "iOS")) {
             for (int i = 0; i < 3; i++) {
                 clickTypeKeyDelete();
             }
-        }
-        else{
+        } else {
             clear(equityFund);
         }
-//        clickStaticText("Choose Asset Allocation Total should be 100%");
-//        clickStaticText("Choose Asset Allocation (Total should be 100%)");
-//        click(equityFundAftClear);
         sendKeys(equityFundAftClear, fund);
         clickStaticText("Choose Asset Allocation Total should be 100%");
     }
 
     public void enterGovtSecurity(String fund) throws Exception {
         click(govtSecurity);
-//        clear(govtSecurity);
         if (Objects.equals(globalParams.getPlatformName(), "iOS")) {
             for (int i = 0; i < 3; i++) {
                 clickTypeKeyDelete();
             }
-        }
-        else{
+        } else {
             clear(equityFund);
         }
-//        clickStaticText("Choose Asset Allocation Total should be 100%");
-//        clickStaticText("Choose Asset Allocation (Total should be 100%)");
-//        click(govtSecurityAftClear);
         sendKeys(govtSecurityAftClear, fund);
         clickStaticText("Choose Asset Allocation Total should be 100%");
     }
@@ -1012,7 +871,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void selectGuardianRelationship() throws Exception {
         click(guardianIsMyTxtBox);
-//        clickByText("Father");
         click(father);
     }
 
@@ -1026,7 +884,6 @@ public class NpsInvestmentPage extends ProfilePage {
     public void scrollNpsVideo() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
             scrollInAndroid(npsEeeVideo, 868, 1733, 237, 1733);
-//            andIosScroll(npsEeeVideo,"left",penSionForNpsVideo);
 
         } else {
             swipe(410, 695, 32, 697, 1000);
@@ -1039,8 +896,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void scrollToExistAndWithDraw() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(existAndWithdraw, 204, 793, 201, 252);
-//            andIosScroll(existAndWithdraw,"up",npsAdvantages);
             andScrollToElementUsingUiScrollable("text", "NPS FAQ’s");
         } else {
             scrollElement(existAndWithdraw, "up", npsAdvantages);
@@ -1049,11 +904,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void clickModerateFifty() {
         click(lifeCycleFundType);
-
-    }
-
-    public void clickModerateTwentyFive() {
-
     }
 
     public void closeAutoChoiceInvest() {
@@ -1062,7 +912,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void scrollToExitOnDeath() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid( 887, 1512, 177, 1504);
             andIosScroll(exitOnDeath, "left", exitMaturity);
         } else {
             swipe(407, 814, 45, 806, 5000);
@@ -1071,7 +920,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void scrollToPartialWithdral() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid( 887, 1512, 177, 1504);
             andIosScroll(partialWithdral, "left", exitOnDeath);
         } else {
             swipe(407, 814, 45, 806, 5000);
@@ -1161,7 +1009,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void swipeToSaveIncTxBan() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(saveIncomeTx, 367, 192, 72, 192);
             andIosScroll(saveIncomeTx, "left", financialSecurity);
         } else {
             scrollElement(saveIncomeTx, "left", financialSecurity);
@@ -1170,7 +1017,6 @@ public class NpsInvestmentPage extends ProfilePage {
 
     public void swipeToZeroTax() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(zeroTaxes, 367, 192, 72, 192);
             andIosScroll(zeroTaxes, "left", saveIncomeTx);
         } else {
             scrollElement(zeroTaxes, "left", saveIncomeTx);
@@ -1245,12 +1091,8 @@ public class NpsInvestmentPage extends ProfilePage {
                 HttpClient client = HttpClient.newHttpClient();
                 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-//                System.out.println("Response Body: " + response.body());
                 String[] arr = response.body().split("\"token\":\"");
                 String[] responce = arr[1].split("\"}}");
-//                System.out.println(responce[0]);
-
-
                 HttpRequest request1 = HttpRequest.newBuilder()
                         .uri(URI.create("https://dev.floatr.in/api/nps/delete"))
                         .timeout(Duration.ofMinutes(2))
@@ -1280,10 +1122,8 @@ public class NpsInvestmentPage extends ProfilePage {
                 HttpClient client = HttpClient.newHttpClient();
                 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-//                System.out.println("Response Body: " + response.body());
                 String[] arr = response.body().split("\"token\":\"");
                 String[] responce = arr[1].split("\"}}");
-//                System.out.println(responce[0]);
 
 
                 HttpRequest request1 = HttpRequest.newBuilder()
@@ -1297,27 +1137,7 @@ public class NpsInvestmentPage extends ProfilePage {
                 HttpResponse<String> resp = client1.send(request1, HttpResponse.BodyHandlers.ofString());
                 System.out.println("Floatr API Status Code: " + resp.statusCode());
             }
-        }
-//            HttpClient client = HttpClient.newHttpClient();
-//            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-//
-//            System.out.println("Response Body: " + response.body());
-//            String[] arr = response.body().split("\"token\":\"");
-//            String[] responce = arr[1].split("\"}}");
-//            System.out.println(responce[0]);
-//
-//
-//            HttpRequest request1 = HttpRequest.newBuilder()
-//                    .uri(URI.create("https://dev.floatr.in/api/nps/delete"))
-//                    .timeout(Duration.ofMinutes(2))
-//                    .header("Authorization", responce[0])
-//                    .DELETE()
-//                    .build();
-//            HttpClient client1 = HttpClient.newBuilder().build();
-//
-//            HttpResponse<String> resp = client1.send(request1, HttpResponse.BodyHandlers.ofString());
-//            System.out.println("Floatr API Status Code: " + resp.statusCode());
-        catch (IOException | InterruptedException e) {
+        } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
@@ -1341,13 +1161,8 @@ public class NpsInvestmentPage extends ProfilePage {
     }
 
     public void doPaymentForNps() throws Exception {
-//        waitForVisibility(internetBanking, 40);
         if (!isVisible(internetBanking)) {
-            waitForVisibility(internetBanking,80);
-//            new MutualFundPage().goBackFromScreen("Payment");
-//            new DigitalGoldStepDef().userWainForMinute(valueOf(3000));
-//            clickByText("Continue");
-//            waitForVisibility(internetBanking, 30);
+            waitForVisibility(internetBanking, 80);
         }
         clickStaticText("Internet Banking");
         click(bankName);
@@ -1366,18 +1181,14 @@ public class NpsInvestmentPage extends ProfilePage {
     public void clickHistoryIcon() {
         click(historyIcon);
     }
+
     public void clickHistoryIconInHome() {
         click(homeHistoryIcon);
     }
 
     public void paymentFailForNps() throws Exception {
-//        waitForVisibility(internetBanking, 40);
         if (!isVisible(internetBanking)) {
-            waitForVisibility(internetBanking,80);
-//            new MutualFundPage().goBackFromScreen("Payment");
-//            new DigitalGoldStepDef().userWainForMinute(valueOf(3000));
-//            clickByText("Continue");
-//            waitForVisibility(internetBanking, 30);
+            waitForVisibility(internetBanking, 80);
         }
         clickStaticText("Internet Banking");
         click(bankName);
@@ -1404,23 +1215,20 @@ public class NpsInvestmentPage extends ProfilePage {
             verifyText("Tier 1");
             verifyText(getCurrentDat() + " • ");
             verifyText(" Buy");
-//            verifyText("₹10,059.00");
             verifyText(amount);
         } else {
-            verifyPartialText("Tier 1 " + getCurrentDat() + " •   Buy " +amount);
-//            Tier 1 04 Dec 2023 •   Buy ₹1,057.44
+            verifyPartialText("Tier 1 " + getCurrentDat() + " •   Buy " + amount);
         }
     }
+
     public void verifySuccessContribution(String amount) throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
             verifyText("Tier 1");
             verifyText(getCurrentDat() + " • ");
             verifyText(" Buy");
-//            verifyText("₹10,059.00");
             verifyText(amount);
         } else {
-            verifyPartialText("Tier 1 " + getCurrentDat() + " •   Buy " +amount);
-//            Tier 1 04 Dec 2023 •   Buy ₹1,057.44
+            verifyPartialText("Tier 1 " + getCurrentDat() + " •   Buy " + amount);
         }
     }
 
@@ -1432,18 +1240,18 @@ public class NpsInvestmentPage extends ProfilePage {
 //            verifyText("₹535.40");
             verifyText(amount);
         } else {
-            verifyPartialText("Tier 1 " + getCurrentDat() + " •   Buy" +amount);
-//            Tier 1 Invalid date •   Buy ₹5,578.40
-//            Tier 1 03 Dec 2023 •   Buy ₹5,578.40
+            verifyPartialText("Tier 1 " + getCurrentDat() + " •   Buy" + amount);
         }
     }
 
     public void clickHombal() {
         click(hombalFilms);
     }
+
     public void clickOriginalValueFloatr() {
         click(originalValueFloatr);
     }
+
     public void deleteBankDetail(String accNo) {
         try {
             HttpRequest request = HttpRequest.newBuilder()
@@ -1453,7 +1261,7 @@ public class NpsInvestmentPage extends ProfilePage {
 //                    .header("x-tenant-id","floatr")
                     .POST(HttpRequest.BodyPublishers.ofString("{\n" +
                             "    \"type\" : \"bankaccount\", \n" +
-                            "    \"account_number\":\""+accNo+"\",\n" +
+                            "    \"account_number\":\"" + accNo + "\",\n" +
                             "    \"account_type\": \"Personal\"\n" +
                             "} "))
                     .build();
@@ -1461,27 +1269,11 @@ public class NpsInvestmentPage extends ProfilePage {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
             System.out.println("Response Body: " + response.body());
-//            String[] arr = response.body().split("\"token\":\"");
-//            String[] responce = arr[1].split("\"}");
-//            System.out.println(responce[0]);
-
-
-//            HttpRequest request1 = HttpRequest.newBuilder()
-//                    .uri(URI.create("https://dev.floatr.in/api/nps/batchprocessing"))
-//                    .timeout(Duration.ofMinutes(2))
-//                    .header("Authorization", "Bearer  "+responce[0]).build();
-////                    .POST(HttpRequest.BodyPublishers.ofString("")).build();
-//
-//            HttpClient client1 = HttpClient.newBuilder().build();
-//
-//            HttpResponse<String> resp = client1.send(request1, HttpResponse.BodyHandlers.ofString());
-//            System.out.println("Floatr API Status Code: " + resp.statusCode());
-//
-        }
-        catch (IOException | InterruptedException e) {
+        } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
+
     public void clickCorporateSub() {
         click(corporateSubRadioBtn);
     }
@@ -1524,22 +1316,6 @@ public class NpsInvestmentPage extends ProfilePage {
     }
 
     public void selectPFM(String name) throws Exception {
-//        String xpath="";
-//        if(Objects.equals(globalParams.getPlatformName(),"Android")){
-//            xpath="//*[@text='"+name+"']";
-//            click(pfmDropDwn);
-//            if(! isElementExist(xpath)){
-////                iOSScrollToElementByName(getElement(xpath), "up", name);
-//            }
-//            clickByText(name);
-//        }
-//        else{
-//            xpath="(//XCUIElementTypeOther[@name='"+ name +"'])[2]";
-//            click(pfmDropDwn);
-//            if(! isElementExist(xpath)){
-//                iOSScrollToElementByName(getElement(xpath), "up", name);
-//            }
-//        }
         click(pfmDropDwn);
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
             andScrollToElementUsingUiScrollable("text", "KOTAK MAHINDRA PENSION FUND LIMITED");
@@ -1592,6 +1368,7 @@ public class NpsInvestmentPage extends ProfilePage {
         String acckNo = getText(acknowledgeNo, "Acknowledgement Number: ");
         utils.log().info("Acknowledgement Number: " + acckNo);
     }
+
     public void verifyPranDetails(DataTable dataTable) {
         List<Map<String, String>> userMap = dataTable.asMaps(String.class, String.class);
         String name = userMap.get(0).get("Name");
@@ -1618,14 +1395,9 @@ public class NpsInvestmentPage extends ProfilePage {
         click(closePranStaPopup);
     }
 
-    public void clickAbcTec() throws InterruptedException {
+    public void clickAbcTec() {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
             click(abcTecno);
-//            Thread.sleep(2000);
-//            click(abcTecno);
-//            Thread.sleep(2000);
-//            click(abcTecno);
-
         } else {
             click(abcTecno);
         }
@@ -1635,7 +1407,7 @@ public class NpsInvestmentPage extends ProfilePage {
         click(investInNPS);
     }
 
-    public void waitForPaymentScreen() throws InterruptedException {
+    public void waitForPaymentScreen() {
         waitForVisibility(homeBtn, 120);
     }
 
@@ -1662,13 +1434,13 @@ public class NpsInvestmentPage extends ProfilePage {
         }
     }
 
-    public void runBatchApi(){
+    public void runBatchApi() {
         try {
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create("https://s.finprim.com/api/auth/admin/login"))
                     .timeout(Duration.ofMinutes(2))
                     .header("Content-Type", "application/json")
-                    .header("x-tenant-id","floatr")
+                    .header("x-tenant-id", "floatr")
                     .POST(HttpRequest.BodyPublishers.ofString("{\n" +
                             "    \"email\": \"amit@floatr.in\",\n" +
                             "    \"password\": \"sbXTnJZ#KyPauq7sa\"\n" +
@@ -1686,7 +1458,7 @@ public class NpsInvestmentPage extends ProfilePage {
             HttpRequest request1 = HttpRequest.newBuilder()
                     .uri(URI.create("https://dev.floatr.in/api/nps/batchprocessing"))
                     .timeout(Duration.ofMinutes(2))
-                    .header("Authorization", "Bearer  "+responce[0]).build();
+                    .header("Authorization", "Bearer  " + responce[0]).build();
 //                    .POST(HttpRequest.BodyPublishers.ofString("")).build();
 
             HttpClient client1 = HttpClient.newBuilder().build();
@@ -1694,52 +1466,58 @@ public class NpsInvestmentPage extends ProfilePage {
             HttpResponse<String> resp = client1.send(request1, HttpResponse.BodyHandlers.ofString());
             System.out.println("Floatr API Status Code: " + resp.statusCode());
 
-        }
-        catch (IOException | InterruptedException e) {
+        } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
-    public void clickShiftMyPran(){
+
+    public void clickShiftMyPran() {
         click(shiftMyPran);
     }
-    public void clickIndRadioBtn(){
+
+    public void clickIndRadioBtn() {
         click(indRadioBtn);
     }
 
-    public void clickCorRadioBtn(){
+    public void clickCorRadioBtn() {
         click(corRadioBtn);
     }
+
     public void enterPopSpCode(String popSpCd) throws Exception {
         click(popSpCdInBx);
         clear(popSpCdInBx);
-        sendKeys(popSpCdInBx,popSpCd);
+        sendKeys(popSpCdInBx, popSpCd);
         clickStaticText("Current POP-SP Code");
 
     }
+
     public void enterCboCode(String cboCode) throws Exception {
         click(cboCdInBx);
         clear(cboCdInBx);
-        sendKeys(cboCdInBx,cboCode);
+        sendKeys(cboCdInBx, cboCode);
         clickStaticText("Current CBO Code");
     }
+
     public void enterPranNum(String pranNum) throws Exception {
         click(pranNumInBx);
         clear(pranNumInBx);
-        sendKeys(pranNumInBx,pranNum);
+        sendKeys(pranNumInBx, pranNum);
         clickStaticText("PRAN Number");
 
     }
+
     public void renameSubscriberName(String subscriberName) throws Exception {
         click(renameSubscriberName);
         clear(renameSubscriberName);
-        sendKeys(renameSubscriberName,subscriberName);
+        sendKeys(renameSubscriberName, subscriberName);
         clickStaticText("PRAN Number");
 
     }
+
     public void enterOTPForPranShift() {
-        String text=pranShiftOtp.getText();
-        String []str =text.split("Enter OTP to Confirm ");
-        String pranOTP=str[1];
+        String text = pranShiftOtp.getText();
+        String[] str = text.split("Enter OTP to Confirm ");
+        String pranOTP = str[1];
         sendKeys(pranShiftOtp1, valueOf(pranOTP.charAt(0)));
         sendKeys(pranShiftOtp2, valueOf(pranOTP.charAt(1)));
         sendKeys(pranShiftOtp3, valueOf(pranOTP.charAt(2)));
@@ -1747,36 +1525,37 @@ public class NpsInvestmentPage extends ProfilePage {
     }
 
     public void enterWrongOTPForPranShift() {
-        sendKeys(pranShiftOtp1,"1");
-        sendKeys(pranShiftOtp2,"2");
-        sendKeys(pranShiftOtp3,"3");
-        sendKeys(pranShiftOtp4,"4");
+        sendKeys(pranShiftOtp1, "1");
+        sendKeys(pranShiftOtp2, "2");
+        sendKeys(pranShiftOtp3, "3");
+        sendKeys(pranShiftOtp4, "4");
     }
+
     public void clickInformationIcon() {
         click(informationIcon);
     }
-    public void clickOnPoint(int xPoint,int yPoint) {
-        clickOnAPoint(xPoint,yPoint);
+
+    public void clickOnPoint(int xPoint, int yPoint) {
+        clickOnAPoint(xPoint, yPoint);
     }
-    public void scrollToScemeG(){
+
+    public void scrollToScemeG() {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
             andScrollToElementUsingUiScrollable("text", "HDFC Pension Management Company Limited Scheme G - Tier I");
         } else {
-//            scrollElement(corporateName, "up", pranStatus);
-            iOSScrollToElementByName(scemeGTire,"up","HDFC Pension Management Company Limited Scheme G - Tier I");
+            iOSScrollToElementByName(scemeGTire, "up", "HDFC Pension Management Company Limited Scheme G - Tier I");
         }
     }
-    public void verifyRegiIncreaseAmt(){
-        String increaseAmt=increaseRegiAmt.getText();
-        if(increaseAmt.contains("500")){
+
+    public void verifyRegiIncreaseAmt() {
+        String increaseAmt = increaseRegiAmt.getText();
+        if (increaseAmt.contains("500")) {
             assertTrue(increaseAmt.contains("500"));
-        }
-        else if(increaseAmt.contains("500.0")){
+        } else if (increaseAmt.contains("500.0")) {
             assertTrue(increaseAmt.contains("500.0"));
-        }
-        else if(increaseAmt.contains("500.1")){
+        } else if (increaseAmt.contains("500.1")) {
             assertTrue(increaseAmt.contains("500.1"));
         }
-        getText(increaseRegiAmt,"Registration amount of this register: "+increaseAmt);
+        getText(increaseRegiAmt, "Registration amount of this register: " + increaseAmt);
     }
 }

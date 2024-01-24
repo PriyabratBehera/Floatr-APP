@@ -28,8 +28,7 @@ public class PropertyManager {
                 } else if (Objects.equals(params.getEnvironment(), "TEST")) {
                     is = getClass().getClassLoader().getResourceAsStream(testPropsFile);
                     props.load(is);
-                }
-                else if (Objects.equals(params.getEnvironment(), "STAGE")) {
+                } else if (Objects.equals(params.getEnvironment(), "STAGE")) {
                     is = getClass().getClassLoader().getResourceAsStream(stagePropsFile);
                     props.load(is);
                 }

@@ -66,13 +66,11 @@ public class DriverManager {
         } else {
             if (driver1 == null) {
                 try {
-                    if (Objects.equals(params.getBrowserType(), "Chrome")){
+                    if (Objects.equals(params.getBrowserType(), "Chrome")) {
                         utils.log().info("initializing chrome driver");
-                    }
-                    else if (Objects.equals(params.getBrowserType(), "Edge")){
+                    } else if (Objects.equals(params.getBrowserType(), "Edge")) {
                         utils.log().info("initializing edge driver");
-                    }
-                    else {
+                    } else {
                         utils.log().info("initializing driver");
                     }
                     switch (params.getBrowserType()) {
@@ -82,26 +80,23 @@ public class DriverManager {
                             break;
                         case "Edge":
                             WebDriverManager.edgedriver().setup();
-                            driver1 = new EdgeDriver(new CapabilitiesManager().getEdgeOptions());                            break;
+                            driver1 = new EdgeDriver(new CapabilitiesManager().getEdgeOptions());
+                            break;
                     }
                     if (driver1 == null) {
                         if (Objects.equals(params.getBrowserType(), "Chrome")) {
                             throw new Exception("chrome driver is null. ABORT!!!");
-                        }
-                        else if (Objects.equals(params.getBrowserType(), "Edge")) {
+                        } else if (Objects.equals(params.getBrowserType(), "Edge")) {
                             throw new Exception("edge driver is null. ABORT!!!");
-                        }
-                        else {
+                        } else {
                             throw new Exception("driver is null. ABORT!!!");
                         }
                     }
                     if (Objects.equals(params.getBrowserType(), "Chrome")) {
                         utils.log().info("Chrome driver is initialized");
-                    }
-                    else if (Objects.equals(params.getBrowserType(), "Edge")) {
+                    } else if (Objects.equals(params.getBrowserType(), "Edge")) {
                         utils.log().info("edge driver is initialized");
-                    }
-                    else {
+                    } else {
                         utils.log().info("driver is initialized");
                     }
                     this.driver1.set(driver1);
@@ -109,11 +104,9 @@ public class DriverManager {
                     e.printStackTrace();
                     if (Objects.equals(params.getBrowserType(), "Chrome")) {
                         utils.log().fatal(" Chrome driver initialization failure. ABORT !!!!" + e.toString());
-                    }
-                    else if (Objects.equals(params.getBrowserType(), "Edge")) {
+                    } else if (Objects.equals(params.getBrowserType(), "Edge")) {
                         utils.log().fatal(" Edge driver initialization failure. ABORT !!!!" + e.toString());
-                    }
-                    else {
+                    } else {
                         utils.log().fatal("Driver initialization failure. ABORT !!!!" + e.toString());
                     }
                     throw e;

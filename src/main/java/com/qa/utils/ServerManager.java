@@ -30,7 +30,6 @@ public class ServerManager {
         //        if (Objects.equals(new GlobalParams().getPlatformName(), "iOS")) {
 //            new DeviceManager().waitForWebDriverAgentLunch();
 //        }
-
     }
 
     public AppiumDriverLocalService getAppiumServerDefault() {

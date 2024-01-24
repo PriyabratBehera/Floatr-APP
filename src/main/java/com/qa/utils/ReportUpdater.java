@@ -1,6 +1,5 @@
 package com.qa.utils;
 
-import io.cucumber.testng.CucumberOptions;
 
 public class ReportUpdater {
 

@@ -92,7 +92,7 @@ public class CreateBudgetStepDef {
     }
 
     @When("user click on I am done")
-    public void userClickOnIAmDone(){
+    public void userClickOnIAmDone() {
         new CreateBudgetPage().clickIAmDone();
     }
 

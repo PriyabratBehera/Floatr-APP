@@ -15,45 +15,33 @@ import java.util.Objects;
 public class HomePage extends ProfilePage {
     TestUtils utils = new TestUtils();
     GlobalParams globalParams = new GlobalParams();
-
     @AndroidFindBy(xpath = "//*[@text='Home']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'Hello')]")
     private MobileElement home;
-
     @AndroidFindBy(xpath = "//*[@text='Wealth']")
     private MobileElement wealth;
-
     @AndroidFindBy(xpath = "//*[@text='Report']")
     private MobileElement report;
-
     @AndroidFindBy(xpath = "(//*[contains(@text, 'Set')])[2]")
     private MobileElement setGoal;
-
     @AndroidFindBy(xpath = "//*[contains(@text, 'Set')]")
     private MobileElement setGoals;
-
     @AndroidFindBy(xpath = "(//*[contains(@text, 'Budget')])[2]")
     private MobileElement createBudget;
-
     @AndroidFindBy(xpath = "(//*[contains(@text, 'Track')])[2]")
     @iOSXCUITFindBy(iOSNsPredicate = "label BEGINSWITH 'Track'")
     private MobileElement trackExpenses;
-
     @AndroidFindBy(accessibility = "HAMBURGER")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"HAMBURGER\"]")
     private MobileElement hamburger;
-
     @iOSXCUITFindBy(iOSNsPredicate = "label BEGINSWITH 'Done'")
     private MobileElement done;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name='Logout']")
     @AndroidFindBy(xpath = "//*[@text='Logout']")
     private MobileElement logoutButton;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name='Yes']")
     @AndroidFindBy(xpath = "//*[@text='Yes']")
     private MobileElement yesButton;
-
 
     public void clickDone() {
         click(done);
@@ -104,7 +92,7 @@ public class HomePage extends ProfilePage {
     public void logout() throws Exception {
         click(hamburger);
         String time = "4000";
-        if(Objects.equals(globalParams.getPlatformName(),"Android")){
+        if (Objects.equals(globalParams.getPlatformName(), "Android")) {
             Thread.sleep(2000);
         }
         waitForVisibility(logoutButton);

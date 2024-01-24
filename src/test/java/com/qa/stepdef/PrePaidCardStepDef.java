@@ -84,7 +84,6 @@ public class PrePaidCardStepDef {
         new LoginPage().loginWithNewUser(mobileNumber, "");
     }
 
-
     @And("user enters otp for self card {string}")
     public void userEntersOtpForSelfCard(String otp) {
         new PrepaidCardPage().enterOTPSelfCard(otp);

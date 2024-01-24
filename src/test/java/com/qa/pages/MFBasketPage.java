@@ -28,7 +28,6 @@ public class MFBasketPage extends ProfilePage {
     @AndroidFindBy(xpath = "//*[@text='Returns Calculator']/following-sibling::android.view.ViewGroup[1]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name='Returns Calculator']/XCUIElementTypeOther")
     private MobileElement closeIconInReturnsScreen;
-
     @AndroidFindBy(xpath = "//*[@text='Name of my Goal']/following-sibling::android.view.ViewGroup[1]/descendant::android.widget.EditText")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Name of my Goal\"]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther/descendant::XCUIElementTypeTextField")
     private MobileElement goalNameInputBx;
@@ -87,7 +86,6 @@ public class MFBasketPage extends ProfilePage {
 
     public void scrollToDisclaimer() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            andScrollToElementUsingUiScrollable("text", "Disclaimer: Mutual fund investments are subject to market risks. Please read the scheme information and other related documents before investing. Past performance is not indicative of future returns of the schemes. Please consider your specific investment goal before choosing to invest in a fund.");
             andIosScroll(disclaimer, "up", portfolioDetails);
         } else {
             andIosScroll(disclaimer, "up", portfolioDetails);
@@ -121,7 +119,7 @@ public class MFBasketPage extends ProfilePage {
     public void enterLowerThanMinEnvAmt() throws Exception {
         String invAmt = minInvAmount.getText();
         String amt = invAmt.split("Min. ₹")[1];
-        amount=Integer.parseInt(amt);
+        amount = Integer.parseInt(amt);
         oneTimeLowAmount = Integer.parseInt(amt) - 100;
         clear(investAmtBx);
         sendKeys(investAmtBx, Integer.toString(oneTimeLowAmount));
@@ -131,7 +129,7 @@ public class MFBasketPage extends ProfilePage {
     public void enterHigherThanMinEnvAmt() throws Exception {
         String invAmt = minInvAmount.getText();
         String amt = invAmt.split("Min. ₹")[1];
-        amount=Integer.parseInt(amt);
+        amount = Integer.parseInt(amt);
         System.out.println(amount);
         oneTimeLowAmount = Integer.parseInt(amt) + 100;
         clear(investAmtBx);
@@ -168,25 +166,23 @@ public class MFBasketPage extends ProfilePage {
         click(sipSelectDate);
         clickByText("5");
     }
+
     public void selectGoalForInvMfBas() throws Exception {
         if (isVisible(goalForMFBas)) {
             click(goalForMFBas);
-        }
-        else{
+        } else {
             enterGoalName("RetirementGoal");
             enterTargetAmt("500000");
             enterExistingAmt("50000");
             enterNoYrAchieveGoal("2");
             clickByText("Continue");
-
-
         }
     }
+
     public void selectGoalForInvTaxG() throws Exception {
-        if(isVisible(goalForMFBas)) {
+        if (isVisible(goalForMFBas)) {
             click(goalForMFBas);
-        }
-        else{
+        } else {
             enterGoalName("RetirementGoal");
             enterTargetAmt("1000000");
             enterExistingAmt("60000");
@@ -194,14 +190,16 @@ public class MFBasketPage extends ProfilePage {
             clickByText("Continue");
         }
     }
+
     public void enterInvestmentDuration(String duration) throws Exception {
         clear(InvDurationBx);
-        sendKeys(InvDurationBx,duration);
+        sendKeys(InvDurationBx, duration);
         clickStaticText("How long do you want to invest?");
     }
+
     public void verifyGoalExist() throws Exception {
-        if(isVisible(ongoing1)){
-            SetGoalsPage setGoalsPage=new SetGoalsPage();
+        if (isVisible(ongoing1)) {
+            SetGoalsPage setGoalsPage = new SetGoalsPage();
             setGoalsPage.clickOneFinancialGoal();
             setGoalsPage.clickEditIcon();
             Thread.sleep(2000);
@@ -210,7 +208,6 @@ public class MFBasketPage extends ProfilePage {
             Thread.sleep(3000);
         }
         new MutualFundPage().goBackFromScreen("Financial Goals");
-
     }
 }
 

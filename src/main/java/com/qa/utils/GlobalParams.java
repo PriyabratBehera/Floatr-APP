@@ -20,6 +20,7 @@ public class GlobalParams {
     public String getRandomNumber() {
         return randomNumber.get();
     }
+
     public void setRandomNumber(String randomNumber1) {
         randomNumber.set(randomNumber1);
     }
@@ -35,6 +36,7 @@ public class GlobalParams {
     public String getMobileNumber() {
         return mobileNumber.get();
     }
+
     public void setMobileNumber(String mobileNumber1) {
         mobileNumber.set(mobileNumber1);
     }
@@ -94,9 +96,11 @@ public class GlobalParams {
     public void setWebkitDebugProxyPort(String webkitDebugProxyPort2) {
         webkitDebugProxyPort.set(webkitDebugProxyPort2);
     }
+
     public String getBrowserType() {
         return browserType.get();
     }
+
     public void setBrowserType(String browserType1) {
         browserType.set(browserType1);
     }

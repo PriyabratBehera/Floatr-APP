@@ -26,9 +26,7 @@ public class WealthStepDef {
 
     @And("^verify Buy Now button is enabled")
     public void verifyBuyNowIsEnabled(){
-
         new WealthPage().verifyBuyNowButtonIsEnabled();
-
     }
 
     @And("^provide all the required details to buy digital gold")

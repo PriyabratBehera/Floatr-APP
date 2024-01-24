@@ -6,7 +6,8 @@ import io.cucumber.java.en.When;
 
 public class InvCalculatorStepDef {
 
-    InvCalculatorPage invCalculatorPage=new InvCalculatorPage();
+    InvCalculatorPage invCalculatorPage = new InvCalculatorPage();
+
     @When("user click income tax planner")
     public void userClickIncomeTaxPlanner() throws Exception {
         invCalculatorPage.clickIncomeTaxPlan();
@@ -207,6 +208,7 @@ public class InvCalculatorStepDef {
     public void userClickOnInformationIconForSalary() {
         invCalculatorPage.clickImfIcForSalary();
     }
+
     @And("close gross salary screen")
     public void closeGrossSalaryScreen() {
         invCalculatorPage.closeImfIcForSalary();

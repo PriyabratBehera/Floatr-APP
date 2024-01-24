@@ -14,153 +14,116 @@ import java.time.Duration;
 import java.util.Objects;
 
 public class CreateBudgetPage extends ProfilePage {
-
     GlobalParams globalParams = new GlobalParams();
-
     @AndroidFindBy(xpath = "//*[@text='Budget']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Budget\"]")
     private MobileElement budget;
     @AndroidFindBy(xpath = "//*[@text='Investment']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Investment\"]")
     private MobileElement investmentR;
-
     @AndroidFindBy(xpath = "//*[@text='Set Financial Goals']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Set Financial Goals\"]")
     private MobileElement setFiGoal;
-
     @AndroidFindBy(xpath = "//*[@text='This Month']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"This Month\"]")
     private MobileElement thisMonth;
     @AndroidFindBy(xpath = "//*[@text='Utility']")
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[contains(@name,'Utility Remaining')])[22]")
     private MobileElement utility;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[contains(@name,'Investment Remaining')])[22]")
     @AndroidFindBy(xpath = "//*[@text='Investment']")
     private MobileElement investment;
-
     @iOSXCUITFindBy(iOSNsPredicate = "label BEGINSWITH 'Medical'")
     @AndroidFindBy(xpath = "//*[@text='Medical']")
     private MobileElement medical;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='My Budget']/ancestor::XCUIElementTypeOther[5]/preceding-sibling::XCUIElementTypeOther/descendant::XCUIElementTypeOther[5]")
     @AndroidFindBy(xpath = "//*[@text='My Budget']/ancestor::android.view.ViewGroup[2]/preceding-sibling::android.view.ViewGroup/descendant::android.view.ViewGroup[4]")
     private MobileElement backIconOfMyBudgetScreen;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Create Budget']/ancestor::XCUIElementTypeOther[8]/preceding-sibling::XCUIElementTypeOther/descendant::XCUIElementTypeOther[5]")
     @AndroidFindBy(xpath = "//*[@text='Create Budget']/ancestor::android.view.ViewGroup[3]/preceding-sibling::android.view.ViewGroup/descendant::android.view.ViewGroup[4]")
     private MobileElement backIconOfCreateBudgetScreen;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'Available Funds')]")
     @AndroidFindBy(xpath = "//*[contains(@text,'Available Funds')]")
     private MobileElement availableFunds;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@name='IPBDCB2AMT']")
     @AndroidFindBy(xpath = "//*[@text='How much will you save & invest?']/following-sibling::android.widget.EditText")
     private MobileElement saveAndInvestAmountBox;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name='₹0']/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='How much do you pay for home rent?']/following-sibling::android.widget.EditText")
     private MobileElement homeRentAmountBox;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@name='IPBDCB4AMT']")
     @AndroidFindBy(xpath = "//*[@text='How much do you pay for loans?']/following-sibling::android.widget.EditText")
     private MobileElement payForLoanAmountBox;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@name='IPBDCB5AMT']")
     @AndroidFindBy(xpath = "//*[@text='How much do you pay for utility bills?']/following-sibling::android.widget.EditText")
     private MobileElement utilityAmountBox;
-
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'Add more'")
     @AndroidFindBy(xpath = "//*[@text='Add more']")
     private MobileElement addMore;
-
     @AndroidFindBy(xpath = "//*[@text='I am done']")
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'I am done'")
     private MobileElement iAmDone;
-
     @AndroidFindBy(xpath = "//*[@text='Report']")
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'Report'")
     private MobileElement report;
-
     @AndroidFindBy(xpath = "//*[@text='Select']")
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'Select'")
     private MobileElement select;
-
     @AndroidFindBy(xpath = "//*[@text='90%']")
     @iOSXCUITFindBy(iOSNsPredicate = "label == '90%'")
     private MobileElement ninetyPercentTab;
-
     @AndroidFindBy(xpath = "//*[@text='Education']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name='Education']")
     private MobileElement education;
-
     @AndroidFindBy(xpath = "//*[@text='payout']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name='payout']")
     private MobileElement payout;
-
     @AndroidFindBy(xpath = "//*[@text='Medical']")
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'Medical'")
     private MobileElement medicalCategory;
-
     @AndroidFindBy(xpath = "//*[@text='50%']")
     @iOSXCUITFindBy(iOSNsPredicate = "label == '50%'")
     private MobileElement fiftyPercentTab;
-
     @AndroidFindBy(xpath = "//*[@text='75%']")
     @iOSXCUITFindBy(iOSNsPredicate = "label == '75%'")
     private MobileElement seventyFivePercentTab;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@name='IPBDAMAMT']")
     @AndroidFindBy(xpath = "//*[@text='₹0']")
     private MobileElement medicalSpendAmountBox;
-
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'Edit'")
     @AndroidFindBy(xpath = "//*[@text='Edit']")
     private MobileElement editBudget;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[contains(@name,'Available Funds: ₹')]/XCUIElementTypeOther/XCUIElementTypeOther)[18]/descendant::XCUIElementTypeOther[2]")
     @AndroidFindBy(xpath = "//*[contains(@text,'Available Funds')]//following-sibling::android.view.ViewGroup[1]/child::android.view.ViewGroup")
     private MobileElement informationIcon;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='How much do you want to spend?']//following-sibling::XCUIElementTypeOther[1]/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='How much do you want to spend?']/following-sibling::android.widget.EditText")
     private MobileElement editBudgetAmount;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeKey[@name='Delete']")
     @AndroidFindBy(xpath = "//*[@text='Delete'")
     private MobileElement deleteButtonOfIos;
-
     @AndroidFindBy(xpath = "//*[@text='Save']")
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'Save'")
     private MobileElement saveBudget;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='How much will you earn this month?']//following-sibling::XCUIElementTypeOther[1]/XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//*[@text='How much will you earn this month?']//following-sibling::android.widget.EditText")
     private MobileElement budgetEssentialAmountBox;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Create Budget']/ancestor::XCUIElementTypeOther[7]/preceding-sibling::XCUIElementTypeOther/descendant::XCUIElementTypeOther[5]")
     @AndroidFindBy(xpath = "//*[@text='Create Budget']/ancestor::android.view.ViewGroup[3]/preceding-sibling::android.view.ViewGroup/descendant::android.view.ViewGroup[4]")
     private MobileElement backButtonOfSecondPageOfCreateBudget;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Edit Budget']/ancestor::XCUIElementTypeOther[6]/preceding-sibling::XCUIElementTypeOther/descendant::XCUIElementTypeOther[9]")
     @AndroidFindBy(xpath = "//*[@text='Edit Budget']/ancestor::android.view.ViewGroup[3]/preceding-sibling::android.view.ViewGroup/descendant::android.view.ViewGroup[5]")
     private MobileElement deleteIonInEditBudgetScreen;
-
     @AndroidFindBy(xpath = "//*[contains(@text,' Amount available to create a budget')]/following-sibling::android.view.ViewGroup")
     private MobileElement closeInformationPopup;
-
     @AndroidFindBy(xpath = "//*[contains(@text,' You already have this category budget')]/following-sibling::android.view.ViewGroup")
     private MobileElement closeYouAlreadyHaveBudgetPopup;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name='Investment'])[2]")
     @AndroidFindBy(xpath = "//*[@text='Investment']")
     private MobileElement investmentInSecondScreen;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name='Investment'])[3]")
     @AndroidFindBy(xpath = "//*[@text='Investment']")
     private MobileElement investmentInThirdScreen;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name='LoanRepayment'])[2]")
     @AndroidFindBy(xpath = "//*[@text='LoanRepayment']")
     private MobileElement loanRepaymentInReportScreen;
@@ -170,18 +133,15 @@ public class CreateBudgetPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Edit Budget']/ancestor::XCUIElementTypeOther[8]/descendant::XCUIElementTypeOther[7]")
     @AndroidFindBy(xpath = "//*[@text='Edit Budget']/ancestor::android.view.ViewGroup[2]/parent::android.widget.ScrollView/parent::android.view.ViewGroup/preceding-sibling::android.view.ViewGroup/descendant::android.view.ViewGroup[4]")
     private MobileElement backIconOfEditBudScreen;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[contains(@name,'Actual Spend: ₹')]/XCUIElementTypeOther/XCUIElementTypeOther)[18]/descendant::XCUIElementTypeOther[2]")
     @AndroidFindBy(xpath = "//*[contains(@text,'Actual Spend')]//following-sibling::android.view.ViewGroup[1]/child::android.view.ViewGroup")
     private MobileElement informationIconInEditBudSc;
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[contains(@name,'Actual Spend: ₹')]/XCUIElementTypeOther/XCUIElementTypeOther)[18]/descendant::XCUIElementTypeOther[2]")
     @AndroidFindBy(xpath = "//*[contains(@text,' Your update income should be more than')]/following-sibling::android.view.ViewGroup")
     private MobileElement closeInformIconPopup;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='My Financial Report']/ancestor::XCUIElementTypeOther[8]/descendant::XCUIElementTypeOther[12]")
     @AndroidFindBy(xpath = "//*[@text='My Budget']/ancestor::android.view.ViewGroup[2]/preceding-sibling::android.view.ViewGroup/descendant::android.view.ViewGroup[4]")
     private MobileElement backIconFinancialScreen;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Budgeting\"]")
     @AndroidFindBy(xpath = "//*[@text='Budgeting']")
     private MobileElement budgeting;
@@ -200,8 +160,6 @@ public class CreateBudgetPage extends ProfilePage {
 
     public void ScrollToViewUtility() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(utility,204,793,201,252);
-//            andScrollToElementUsingUiScrollable("text","Utility");
             andIosScroll(utility, "up", investment);
         } else {
             scrollToElement(utility, "up", investment);
@@ -224,7 +182,6 @@ public class CreateBudgetPage extends ProfilePage {
         String availableAmount = new BasePage().getText(availableFunds, "available funds is: ");
         String[] arr = availableAmount.split("Available Funds: ₹");
         String str = arr[1].replace(",", "");
-//        int bAmount = Integer.parseInt(arr[1]) + 1;
         int bAmount = Integer.parseInt(str) + 1;
         String amount = Integer.toString(bAmount);
         sendKeys(saveAndInvestAmountBox, amount);
@@ -331,14 +288,10 @@ public class CreateBudgetPage extends ProfilePage {
 
     public void swipeToBudget() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "iOS")) {
-//            swipe(405, 398, 26, 394, 1000);
             iOSScrollToElementUsingMobileScrollParent(budget, "name == \"Budget\"");
 
         } else if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            swipe(938, 958, 101, 945, 1000);
-//            iOSScrollToElementUsingMobileScrollParent(budget,"name == \"Budget\"");
-//            andScrollToElementUsingUiScrollable("text", "Budget");
-            andIosScroll(investmentR,"left",thisMonth);
+            andIosScroll(investmentR, "left", thisMonth);
         }
     }
 
@@ -426,10 +379,9 @@ public class CreateBudgetPage extends ProfilePage {
     public void clickBackIconFinancialSc() {
         click(backIconFinancialScreen);
     }
+
     public void scrollToMedical() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(utility,204,793,201,252);
-//            andScrollToElementUsingUiScrollable("text","Utility");
             andIosScroll(medical, "up", investment);
         } else {
             scrollToElement(medical, "up", investment);

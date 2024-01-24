@@ -15,6 +15,4 @@ public class ProfileStepDef {
         profilePage.clickHamburgerIconInHomePage();
         profilePage.clickLogOut();
     }
-
-
 }

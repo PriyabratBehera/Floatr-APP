@@ -166,14 +166,7 @@ public class WebBasePage {
 
     public void clickLinkText(String text) throws Exception {
         String xpath = "//*[text()='" + text + "']";
-//        if(Objects.equals(globalParams.getBrowserType(),"Safari")){
-//            Thread.sleep(4000);
-//            getElement(xpath).click();
-//        }
-//        else{
         getElement(xpath).click();
-//        }
-
     }
 
     public void scrollDownToElement(WebElement element) throws InterruptedException {
@@ -185,13 +178,10 @@ public class WebBasePage {
     public void scrollDown() throws InterruptedException {
 
         try {
-//            driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
             WebDriverWait wait = new WebDriverWait(driver, 10);
             JavascriptExecutor js = (JavascriptExecutor) driver;
-//            js.executeScript("return document.readyState").toString().equals("complete");
             wait.until(ExpectedConditions.jsReturnsValue("return document.readyState === 'complete';"));
             js.executeAsyncScript("window.scrollBy(0,400)", "");
-//            js.executeScript("return document.readyState").toString().equals("complete");
         } catch (ScriptTimeoutException e) {
             e.printStackTrace();
         }

@@ -5,7 +5,7 @@ Feature: Rainy Day Scenario
     Given user login with user "9123789980 | 9123789980"
     And application launched successfully
     And user wait for "3000" milli second
-  And user click on rainy day on home screen
+    And user click on rainy day on home screen
     Then user verify static text "Planning for Rainy Day"
     And user verify partial static text "Rainy Day Funds will take care"
 
@@ -42,7 +42,6 @@ Feature: Rainy Day Scenario
     And user click by text "₹90,000"
     And user click by text "Continue"
     When user click by text "Yes"
-#    And user wait for "3000" milli second
     And user enter rainy day saving amount as "999"
     And user click partial static text "I have an existing savings"
     And user click by text "Continue"
@@ -57,7 +56,6 @@ Feature: Rainy Day Scenario
     Then verify validation error "Maximum amount should be ₹1.80 L"
     When user go back from "Plan Rainy Day Savings" screen
     Then user verify static text "Recommended Savings"
-
 
   Scenario: Verify user invest in rainy day fund without having emi
     Given application launched successfully

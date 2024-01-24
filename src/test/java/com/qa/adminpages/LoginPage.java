@@ -13,15 +13,12 @@ import java.util.Properties;
 public class LoginPage extends WebBasePage {
     TestUtils utils = new TestUtils();
     GlobalParams params = new GlobalParams();
-
     @FindBy(xpath = "//*[@id=\"yourUsername\"]")
     private WebElement usrName;
     @FindBy(xpath = "//*[@id=\"yourPassword\"]")
     private WebElement password;
-
     @FindBy(xpath = "//*[@id=\"loginbtn\"]")
     private WebElement loginBtn;
-
     @FindBy(xpath = "//*[@id=\"ma\"]/div[1]/div/div/h1")
     private WebElement dashBoard;
 

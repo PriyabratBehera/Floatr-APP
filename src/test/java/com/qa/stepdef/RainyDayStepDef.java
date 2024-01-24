@@ -66,7 +66,6 @@ public class RainyDayStepDef {
     @When("user enter total loan EMI in a month amount as {string}")
     public void userEnterTotalLoanEMIInAMonthAmountAs(String amount) {
         new RainyDayPage().enterTotalEmiLoanInAMonthAmount(amount);
-
     }
 
     @And("user go back from plan rainy days saving screen")

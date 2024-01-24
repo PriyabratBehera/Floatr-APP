@@ -6,7 +6,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class RewardsStepDef {
-
     RewardsPage rewardsPage = new RewardsPage();
 
     @When("user click on link Add membership")

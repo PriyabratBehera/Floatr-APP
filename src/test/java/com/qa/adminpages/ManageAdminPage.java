@@ -10,13 +10,10 @@ import java.io.IOException;
 public class ManageAdminPage extends WebBasePage {
     WebBasePage basePage = new WebBasePage();
     TestUtils utils = new TestUtils();
-
     @FindBy(xpath = "//a[@id='transaction_history']")
     private WebElement amcs;
-
     @FindBy(xpath = "//img[@id='logofile']")
     private WebElement fileUpload;
-
     @FindBy(xpath = "//a[contains(span, 'Users')]")
     private WebElement User;
     @FindBy(id = "kycmodule")

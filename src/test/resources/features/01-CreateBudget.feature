@@ -81,7 +81,6 @@ Feature: Create Budget Scenarios
 
   Scenario: Verify I am done link is functional
     Given user clean up the app data for "9191787806 | 9191787806"
-#    And user login with user "9191787806 | 9191787806"
     And application launched successfully
     When user clicks on Budget
     And user wait for "2000" milli second

@@ -11,60 +11,44 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class MutualFundPage extends WebBasePage {
-
     @FindBy(xpath = "//span[@id='select2-amclist-container']")
     private WebElement amcDropDwn;
-
     @FindBy(xpath = "//li[text()='SBI']")
     private WebElement amcSBI;
     @FindBy(xpath = "//li[text()=' SBI']")
     private WebElement editAmcSBI;
-
     @FindBy(xpath = "//input[@id='inputNanme4']")
     private WebElement schemesName;
-
     @FindBy(xpath = "//span[@id='select2-role-container']")
     private WebElement categoryDropDwn;
     @FindBy(xpath = "//span[@id='select2-fundcategory-container']")
     private WebElement editCategoryDropDwn;
-
     @FindBy(xpath = "//li[text()='Equity']")
     private WebElement equityCategory;
     @FindBy(xpath = "//li[text()=' Equity']")
     private WebElement editEquityCategory;
-
     @FindBy(xpath = "//span[@id='select2-fundsubcategory-container']")
     private WebElement subCategoryDropDwn;
-
     @FindBy(xpath = "//li[text()='Large Cap']")
     private WebElement largeCap;
-
     @FindBy(xpath = "//input[@id='isin_code']")
     private WebElement isinCode;
-
     @FindBy(xpath = "//input[@name='amfi_code']")
     private WebElement amfiCode;
-
-
     @FindBy(xpath = "//input[@id='name']")
     private WebElement amcName;
-
     @FindBy(xpath = "//input[@id='file-upload']")
     private WebElement amcLogo;
-
     @FindBy(xpath = "//input[@id='mf']")
     private WebElement schemeActiveNow;
-
     @FindBy(xpath = "//input[@id='submit']")
     private WebElement submitBtn;
     @FindBy(xpath = "//BUTTON[@id='submit']")
     private WebElement submit;
-
     @FindBy(xpath = "//a[text()='Edit']")
     private WebElement editLink;
     @FindBy(xpath = "//a[text()='Delete']")
     private WebElement deleteLink;
-
 
     public void selectAmc() throws InterruptedException {
         click(amcDropDwn);
@@ -114,7 +98,6 @@ public class MutualFundPage extends WebBasePage {
     }
 
     public void clickSchemeActiveChk() throws InterruptedException {
-//        click(schemeActiveNow);
         ((JavascriptExecutor) new DriverManager().getWebDriver()).executeScript("arguments[0].scrollIntoView(true);", schemeActiveNow);
         Thread.sleep(5000);
         click(schemeActiveNow);

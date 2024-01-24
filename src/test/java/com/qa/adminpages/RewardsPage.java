@@ -11,43 +11,30 @@ import org.testng.Assert;
 import java.util.List;
 
 public class RewardsPage extends WebBasePage {
-
     @FindBy(xpath = "//a[@id='transaction_history']")
     private WebElement addMembership;
-
-
     @FindBy(xpath = "//input[@id='name']")
     private WebElement membershipName;
-
     @FindBy(xpath = "//input[@id='points']")
     private WebElement points;
-
     @FindBy(xpath = "//input[@id='redemption_limit']")
     private WebElement redemptionLimit;
     @FindBy(xpath = "//input[@id='redemption_ratio']")
     private WebElement redemptionRatio;
-
     @FindBy(xpath = "//input[@id='minimum_redemption']")
     private WebElement minimumRedemption;
-
     @FindBy(xpath = "//input[@id='maximum_redemption']")
     private WebElement maximumRedemption;
-
     @FindBy(xpath = "//button[@type='submit']")
     private WebElement submit;
-
     @FindBy(xpath = "//a[text()='Edit']")
     private WebElement editLink;
     @FindBy(xpath = "//a[text()='Delete']")
     private WebElement deleteLink;
-
-
     @FindBy(xpath = "//a[text()='Digilocker']")
     private WebElement digilocker;
-
     @FindBy(xpath = "//a[text()='adityaBirla']")
-    private WebElement adityaBirla;
-
+    private WebElement adityaBirla
     @FindBy(xpath = "//button[text()='Confirm']")
     private WebElement confirmDelete;
 

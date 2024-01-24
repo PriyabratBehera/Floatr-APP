@@ -10,10 +10,8 @@ import org.apache.logging.log4j.core.appender.HttpURLConnectionManager;
 import org.testng.Assert;
 
 public class HamburgerMenuStepDef {
-
     GlobalParams params = new GlobalParams();
     TestUtils testUtils=new TestUtils();
-    
     HamburgerMenuPage hamburgerMenuPage=new HamburgerMenuPage();
     @When("user click on hamburger menu")
     public void userClickOnHamburgerMenu() {

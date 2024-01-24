@@ -11,7 +11,8 @@ import org.testng.Assert;
 import java.util.Objects;
 
 public class NpsInvestmentStepDef {
-    NpsInvestmentPage npsInvestmentPage=new NpsInvestmentPage();
+    NpsInvestmentPage npsInvestmentPage = new NpsInvestmentPage();
+
     @When("user scroll to NPS investment")
     public void userScrollToNPSInvestment() throws Exception {
         npsInvestmentPage.scrollToNpsInvestment();
@@ -36,10 +37,12 @@ public class NpsInvestmentStepDef {
     public void userScrollToViewNpsFaqs() throws Exception {
         npsInvestmentPage.scrollToNpsFaq();
     }
+
     @And("user scroll to view exist and withdraw")
     public void userScrollToViewExistAndWithdraw() throws Exception {
         npsInvestmentPage.scrollToExistAndWithDraw();
     }
+
     @When("user scroll to view more about NPS")
     public void userScrollToViewMoreAboutNPS() throws Exception {
         npsInvestmentPage.scrollToMoreAboutNps();
@@ -91,7 +94,7 @@ public class NpsInvestmentStepDef {
     }
 
     @And("user click on crop details")
-    public void userClickOnCropDetails(){
+    public void userClickOnCropDetails() {
         npsInvestmentPage.clickCorpDetail();
     }
 
@@ -311,14 +314,17 @@ public class NpsInvestmentStepDef {
     public void userDeleteNpsAccount(String mobNo) {
         npsInvestmentPage.deleteNps(mobNo);
     }
+
     @When("user click tire one account type")
     public void userClickTireAccountType() {
         npsInvestmentPage.clickTire1Acc();
     }
+
     @When("user click tire two account type")
     public void userClickTireTwoAccountType() {
         npsInvestmentPage.clickTire2Acc();
     }
+
     @And("user select bank")
     public void userSelectBank() {
         npsInvestmentPage.selectBank();
@@ -348,6 +354,7 @@ public class NpsInvestmentStepDef {
     public void userDoPaymentFailForNpsContribution() throws Exception {
         npsInvestmentPage.paymentFailForNps();
     }
+
     @When("user close reason of failure screen")
     public void userCloseReasonOfFailureScreen() {
         npsInvestmentPage.closeFailureScreen();
@@ -374,7 +381,7 @@ public class NpsInvestmentStepDef {
     }
 
     @When("user close restart nps application screen")
-    public void userCloseRestartNpsApplicationScreen(){
+    public void userCloseRestartNpsApplicationScreen() {
         npsInvestmentPage.closeRestartNpsScreen();
     }
 
@@ -387,6 +394,7 @@ public class NpsInvestmentStepDef {
     public void userVerify100Percent() {
         npsInvestmentPage.verify100PercentNominee();
     }
+
     @Then("user verify 50 percent")
     public void userVerify50Percent() {
         npsInvestmentPage.verify50PercentNominee();
@@ -512,6 +520,7 @@ public class NpsInvestmentStepDef {
     public void verifyCurrentAgeMustBeSmallerThanSixtyFive() throws Exception {
         npsInvestmentPage.verifyCurrentAgeValidation();
     }
+
     @And("user run the batch api")
     public void userRunTheBatchApi() {
         npsInvestmentPage.runBatchApi();
@@ -577,14 +586,15 @@ public class NpsInvestmentStepDef {
         npsInvestmentPage.clickInformationIcon();
 
     }
+
     @And("user verify pran details")
     public void userVerifyPranDetails(DataTable table) {
         npsInvestmentPage.verifyPranDetails(table);
     }
 
     @And("user click coordinate of {int} and {int}")
-    public void userClickCoordinateOfAnd(int xPoint, int yPoint){
-        npsInvestmentPage.clickOnPoint(xPoint,yPoint);
+    public void userClickCoordinateOfAnd(int xPoint, int yPoint) {
+        npsInvestmentPage.clickOnPoint(xPoint, yPoint);
     }
 
     @Then("user verify successful nps contribution transaction as {string}")

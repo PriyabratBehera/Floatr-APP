@@ -7,9 +7,10 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class MFBasketStepDef {
-    MFBasketPage mfBasketPage=new MFBasketPage();
+    MFBasketPage mfBasketPage = new MFBasketPage();
+
     @When("user click on gift yourself basket")
-    public void WhenUserClickOnGiftYourselfBasket(){
+    public void WhenUserClickOnGiftYourselfBasket() {
         mfBasketPage.clickGiftYorSelfMFB();
     }
 
@@ -42,7 +43,6 @@ public class MFBasketStepDef {
     public void userEnterMFBasketInvestAmountLowerThanMinimumAmount() throws Exception {
         mfBasketPage.enterLowerThanMinEnvAmt();
     }
-
 
     @And("verify validation error Amount is required in personal financial goal screen")
     public void verifyValidationErrorAmountIsRequiredInPersonalFinancialGoalScreen() {

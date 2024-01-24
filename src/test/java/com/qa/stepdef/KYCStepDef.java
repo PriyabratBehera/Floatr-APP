@@ -64,16 +64,6 @@ public class KYCStepDef {
         kycPage.personalDetailScreen();
     }
 
-//    @When("user enter fathers name")
-//    public void userEnterFathersName() throws Exception {
-//        kycPage.enterFathersName();
-//    }
-//
-//    @And("user enter mothers name")
-//    public void userEnterMothersName() throws Exception {
-//        kycPage.enterMothersName();
-//    }
-
     @And("user enter PAN number")
     public void userEnterPanNumber() throws Exception {
         kycPage.enterPanNumber();
@@ -103,9 +93,7 @@ public class KYCStepDef {
         kycPage.selectOccupationTypeProfessional();
         kycPage.selectOccupationTypeSelfEmploy();
         kycPage.scrollToAnnualIncome();
-//        kycPage.selectMainSourceOfIncomeOthers();
         kycPage.selectMainSourceOfIncomeRental();
-//        kycPage.scrollToAnnualIncome();
         kycPage.selectAnnualIncomeFiveToTen();
         kycPage.selectAnnualIncomeOneToFive();
     }
@@ -266,6 +254,7 @@ public class KYCStepDef {
     public void userGiveLocation() {
         kycPage.giveLocation();
     }
+
     @And("user close sign sample popup")
     public void userCloseSignSamplePopup() {
         kycPage.closeSignPopup();

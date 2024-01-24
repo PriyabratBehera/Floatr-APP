@@ -8,7 +8,6 @@ import io.cucumber.java.en.When;
 import java.io.IOException;
 
 public class MutualFundStepDef {
-
     MutualFundPage mutualFundPage = new MutualFundPage();
 
     @When("user select amc name")

@@ -11,65 +11,47 @@ import org.openqa.selenium.By;
 import java.util.Objects;
 
 public class RainyDayPage extends ProfilePage {
-
     GlobalParams globalParams = new GlobalParams();
-
     TestUtils testUtils = new TestUtils();
-
-//    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Rainy Days\"])[2]")
-//    @AndroidFindBy(xpath = "//*[@text=\"Rainy Days\"]")
-//    private MobileElement rainyDayBanner;
 
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='My existing savings for this goal']/preceding-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text='My existing savings for this goal']//preceding-sibling::android.view.ViewGroup[3]/android.widget.EditText")
     private MobileElement rainySavingAmountBox;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='KYC']/preceding::XCUIElementTypeOther[1]")
     @AndroidFindBy(xpath = "//*[@text='KYC']/preceding-sibling::android.view.ViewGroup")
     private MobileElement backButtonMyAccountScreen;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name='Vertical scroll bar, 2 pages'])[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")
     @AndroidFindBy(xpath = "(//*[@text='Spendings']/ancestor::android.view.ViewGroup[2]/following-sibling::android.widget.HorizontalScrollView/descendant::android.widget.ImageView[1])[1]")
     private MobileElement setFinancialGoalBanner;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Essential Goals']/preceding-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text='Essential Goals']//preceding-sibling::android.view.ViewGroup")
     private MobileElement areYouReadyForTheRainyDays;
-
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name='I / We have read the related Scheme Document of the selected fund before investing  ']/XCUIElementTypeOther")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='I / We have read the related Scheme Document of the selected fund before investing']")
     @AndroidFindBy(xpath = "//*[@text='I / We have read the related Scheme Document of the selected fund before investing  ']/preceding-sibling::android.view.ViewGroup")
     private MobileElement iWeHaveCheckBox;
-
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name='Complete KYC'])[2]")
     @AndroidFindBy(xpath = "//*[@text='Complete KYC']")
     private MobileElement completeKyc;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='My monthly expenses']/preceding-sibling::XCUIElementTypeOther[1]")
     @AndroidFindBy(xpath = "//*[@text='My monthly expenses']/preceding-sibling::android.view.ViewGroup/android.widget.EditText")
     private MobileElement monthlyExpensesAmountBox;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='My total loan EMI in a month']/preceding-sibling::XCUIElementTypeOther[1]")
     @AndroidFindBy(xpath = "//*[@text='My total loan EMI in a month']//preceding-sibling::android.view.ViewGroup/android.widget.EditText")
     private MobileElement totalLoanEmiInAMonthBox;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeKey[@name='Delete']")
     private MobileElement deleteButtonOfIos;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Plan Rainy Day Savings']/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text='Plan Rainy Day Savings']/preceding-sibling::android.view.ViewGroup")
     private MobileElement backIconSavingScreen;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Loans & Liabilities']/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text='Loans & Liabilities']/preceding-sibling::android.view.ViewGroup")
     private MobileElement backIconLiabilitiesScreen;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Household Expenses']/parent::XCUIElementTypeOther/preceding-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text='Household Expenses']/preceding-sibling::android.view.ViewGroup")
     private MobileElement backIconHouseholdExpensesScreen;
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Amount I want to invest\"]/preceding-sibling::XCUIElementTypeOther")
     @AndroidFindBy(xpath = "//*[@text='Household Expenses']/preceding-sibling::android.view.ViewGroup")
     private MobileElement investAmtInCon;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"My monthly investment date\"]")
     @AndroidFindBy(xpath = "//*[@text='My monthly investment date']")
     private MobileElement monthlyInvestDt;
@@ -82,12 +64,9 @@ public class RainyDayPage extends ProfilePage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"I want to invest now\"]/following::XCUIElementTypeOther[5]")
     @AndroidFindBy(xpath = "//*[@text='I want to invest now']/following-sibling::android.view.ViewGroup[3]/android.widget.EditText")
     private MobileElement investFurther;
-
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"28th\"]")
     @AndroidFindBy(xpath = "//*[@text='28th']")
     private MobileElement twentyEight;
-
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Investment Amount\"]")
     @AndroidFindBy(xpath = "//*[contains(@text,'Min ₹')]")
     private MobileElement schemes;
@@ -100,7 +79,6 @@ public class RainyDayPage extends ProfilePage {
     }
 
     public void enterRainyDaySavingAmount(String amount) throws Exception {
-//        sendKeys(rainySavingAmountBox, amount);
         if (Objects.equals(globalParams.getPlatformName(), "iOs")) {
             click(rainySavingAmountBox);
             for (int i = 0; i < 10; i++) {
@@ -119,14 +97,7 @@ public class RainyDayPage extends ProfilePage {
     }
 
     public void swipeToSetFinancialGoal() throws Exception {
-//        if (!isVisible(rainyDayBanner)) {
-//            if (Objects.equals(globalParams.getPlatformName(), "iOS")) {
-//                swipe(405, 398, 26, 394, 1000);
-//            } else if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//                swipe(495, 2022, 511, 804, 5000);
-//            }
-//        }
-//        scrollToElement(goalBasedInv,"up",setFinancialGoal);
+
     }
 
     public void clickSetFinancialGoalBanner() {
@@ -189,11 +160,9 @@ public class RainyDayPage extends ProfilePage {
 
     public void scroll28th() throws Exception {
         if (Objects.equals(globalParams.getPlatformName(), "Android")) {
-//            scrollInAndroid(twentyEight, 204, 793, 201, 252);
             andScrollToElementUsingUiScrollable("text", "28th");
         } else {
             scrollElement(twentyEight, "up", monthlyInvestDt, 1000);
-//            iOSScrollToElementByName(twentyEight,"up","28th");
         }
     }
 
@@ -213,7 +182,7 @@ public class RainyDayPage extends ProfilePage {
     }
 
     public void scrollIWeHaveCheckBox() throws Exception {
-            andIosScroll(iWeHaveCheckBox, "up", schemes);
+        andIosScroll(iWeHaveCheckBox, "up", schemes);
     }
 }
 

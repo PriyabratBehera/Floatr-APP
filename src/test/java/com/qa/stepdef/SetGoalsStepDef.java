@@ -18,7 +18,7 @@ public class SetGoalsStepDef {
     GlobalParams globalParams = new GlobalParams();
 
     @When("user clicks on set goals")
-    public void userClicksOnSetGoals(){
+    public void userClicksOnSetGoals() {
         new HomePage().clickSetGoal();
     }
 

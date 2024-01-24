@@ -10,9 +10,7 @@ import io.cucumber.java.en.When;
 import java.util.Objects;
 
 public class CreateAdminStepDef {
-
     CreateAdminPage createAdminPage = new CreateAdminPage();
-
     TestUtils utils = new TestUtils();
     GlobalParams globalParams = new GlobalParams();
 

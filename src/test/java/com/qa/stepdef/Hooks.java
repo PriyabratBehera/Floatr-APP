@@ -37,13 +37,13 @@ public class Hooks {
     @After
     public void quit(Scenario scenario) throws IOException, InterruptedException {
         if (Objects.equals(params.getPlatformName(), "Android") || Objects.equals(params.getPlatformName(), "iOS")) {
-                if (scenario.isFailed()) {
-                    byte[] screenshot = new DriverManager().getDriver().getScreenshotAs(OutputType.BYTES);
-                    scenario.attach(screenshot, "image/png", scenario.getName());
-                    if(Objects.equals(params.getPlatformName(), "Android")){
-                        Thread.sleep(5000);
-                    }
+            if (scenario.isFailed()) {
+                byte[] screenshot = new DriverManager().getDriver().getScreenshotAs(OutputType.BYTES);
+                scenario.attach(screenshot, "image/png", scenario.getName());
+                if (Objects.equals(params.getPlatformName(), "Android")) {
+                    Thread.sleep(5000);
                 }
+            }
 //        new VideoManager().stopRecording(scenario.getName());
             new BasePage().closeApp();
 

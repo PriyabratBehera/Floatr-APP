@@ -18,9 +18,10 @@ import java.util.Objects;
 
 public class HomeStepDef {
 
-    GlobalParams globalParams=new GlobalParams();
+    GlobalParams globalParams = new GlobalParams();
+
     @When("^verify menu options in homepage$")
-    public void verifyMenuOptionsInHomePage(){
+    public void verifyMenuOptionsInHomePage() {
         new HomePage().verifyMenuOptionsInHomePage();
     }
 
@@ -28,8 +29,6 @@ public class HomeStepDef {
     public void userLoginWithKYCCompletedUser(String mobileNumber) throws Exception {
         new HomePage().logout();
         new LoginPage().loginWithoutPermission(mobileNumber, "");
-//        if(new LoginPage().verifyPersonalizeYourApp()){
-//            new LoginPage().createProfile();
     }
 
 }

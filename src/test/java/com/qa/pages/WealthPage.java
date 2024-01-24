@@ -7,19 +7,14 @@ import org.testng.Assert;
 
 public class WealthPage extends BasePage {
     TestUtils utils = new TestUtils();
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Digital Gold')]")
     private MobileElement digitalGoldTile;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Gold - 24K')]")
     private MobileElement gold24k_button;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Silver - 24K')]")
     private MobileElement silver24k_button;
-
     @AndroidFindBy(xpath = "//*[contains(@text,'Enter weight')]")
     private MobileElement enterWeightTextBox;
-
     @AndroidFindBy(xpath = "//*[@content-desc='IPGDBUYN']")
     private MobileElement buyNowButton;
 

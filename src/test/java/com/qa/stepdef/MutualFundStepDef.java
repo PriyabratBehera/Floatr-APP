@@ -16,7 +16,7 @@ import java.util.Objects;
 public class MutualFundStepDef {
 
     GlobalParams params = new GlobalParams();
-    MutualFundPage mutualFundPage=new MutualFundPage();
+    MutualFundPage mutualFundPage = new MutualFundPage();
 
     @When("user clicks on Mutual Funds")
     public void userClicksOnMutualFunds() {
@@ -131,6 +131,7 @@ public class MutualFundStepDef {
     public void userClickOn5YDurationBox() {
         mutualFundPage.clickDurationBox();
     }
+
     @And("user click on 3Y Duration box")
     public void userClickOn3YDurationBox() {
         mutualFundPage.click3YDurationBox();
@@ -308,7 +309,7 @@ public class MutualFundStepDef {
     }
 
     @And("user click on in Process transaction view")
-    public void userClickOnInProcessTransactionHistory(){
+    public void userClickOnInProcessTransactionHistory() {
         mutualFundPage.clickMfInProcessView();
     }
 
@@ -353,7 +354,7 @@ public class MutualFundStepDef {
     }
 
     @And("user wait for visibility of element {string}")
-    public void userWaitForVisibilityOfElement(String text){
+    public void userWaitForVisibilityOfElement(String text) {
         mutualFundPage.waitForVisibilityOfElement(text);
     }
 
@@ -388,7 +389,7 @@ public class MutualFundStepDef {
     }
 
     @When("user clicks on complete KYC")
-    public void userClicksOnCompleteKYC(){
+    public void userClicksOnCompleteKYC() {
         mutualFundPage.clickOnCompleteKYC();
     }
 

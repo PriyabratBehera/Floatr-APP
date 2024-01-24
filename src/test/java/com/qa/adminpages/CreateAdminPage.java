@@ -18,7 +18,6 @@ public class CreateAdminPage extends WebBasePage {
     GlobalParams params = new GlobalParams();
     @FindBy(xpath = "//span[@id='select2-role-container']")
     private WebElement selectRole;
-
     @FindBy(xpath = "//ul[@id='select2-role-results']/li[6]")
     private WebElement selectSoftwareQa;
     @FindBy(xpath = "//input[@id='inputNanme4']")
@@ -37,7 +36,6 @@ public class CreateAdminPage extends WebBasePage {
     private WebElement priyabrat;
     @FindBy(xpath = "//td[text()='litan ']")
     private WebElement litan;
-
     @FindBy(xpath = "(//input[@id='contact'])[2]")
     private WebElement referralCode;
     @FindBy(xpath = "//table[@id='filtertable']/tbody/tr")

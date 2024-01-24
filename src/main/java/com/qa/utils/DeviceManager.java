@@ -11,15 +11,12 @@ public class DeviceManager {
     GlobalParams globalParams = new GlobalParams();
     private static Properties props = new Properties();
 
-
     public void closeSimulator() {
         try {
             ProcessBuilder processBuilder = new ProcessBuilder("xcrun", "simctl", "shutdown", "all");
 //            ProcessBuilder processBuilder = new ProcessBuilder("xcrun", "simctl", "shutdown", "booted");
             Process process = processBuilder.start();
-
             int exitCode = process.waitFor();
-
             if (exitCode == 0) {
                 utils.log().info("iOS Simulator closed successfully.");
             } else {
@@ -65,6 +62,7 @@ public class DeviceManager {
             throw new RuntimeException(e);
         }
     }
+
     public boolean isAppInstalled(String packageName) {
         try {
             Process process = Runtime.getRuntime().exec("adb shell pm list packages");
@@ -88,14 +86,13 @@ public class DeviceManager {
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-
     }
 
-    public void cucumberReportingPropertiesUpdater(String moduleName,String testType) throws IOException {
+    public void cucumberReportingPropertiesUpdater(String moduleName, String testType) throws IOException {
         String filePath = System.getProperty("user.dir") + File.separator + "cucumber-reporting.properties";
         String filePath1 = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "config.properties";
 
-        if(Objects.equals(globalParams.getPlatformName(),"Android") || Objects.equals(globalParams.getPlatformName(),"iOS")) {
+        if (Objects.equals(globalParams.getPlatformName(), "Android") || Objects.equals(globalParams.getPlatformName(), "iOS")) {
             Properties properties = readPropertiesFile(filePath);
             properties.setProperty("classifications.TEST_TYPE", "");
             properties.setProperty("classifications.TEST_TYPE", testType);

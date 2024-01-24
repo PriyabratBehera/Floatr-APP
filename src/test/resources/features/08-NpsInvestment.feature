@@ -15,7 +15,6 @@ Feature: NPS Scenario
     And user click by text "Shift My PRAN"
     And user go back from "KYC" screen
     And user click on NPS Investment
-#    And user go back from "NPS" screen
 
   Scenario: Validate UI Elements on NPS Landing Page
     And application launched successfully
@@ -104,7 +103,7 @@ Feature: NPS Scenario
 #    And user verify static text "75%"
     When user close the auto choice investment screen
     Then user verify static text "Features"
-  @ExitatMaturitySpaceIssue
+
   Scenario: Verify Functionality of View All Link on NPS Screen
     Given application launched successfully
     And user click on NPS Investment
@@ -302,7 +301,7 @@ Feature: NPS Scenario
     And user click by text "Continue"
     And user wait for "3000" milli second
     And user click by text "Continue"
-@ISSUEInScrollDownSpaceIssue
+
   @Validation @NPSValidation
   Scenario: Validate in Investment Choice Screen
 #    Given user login with user "7272727272 | 7272727272"
